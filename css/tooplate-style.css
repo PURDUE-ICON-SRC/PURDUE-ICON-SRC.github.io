@@ -30,7 +30,7 @@ http://www.tooplate.com/view/2103-central
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #ffc670; /*#04AA6D;*/
   color: white;
 }
 
