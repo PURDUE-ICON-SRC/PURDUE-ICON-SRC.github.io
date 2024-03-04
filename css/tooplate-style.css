@@ -236,8 +236,8 @@ a {
 }
 
 .tm-media-img {
-  width: 200;
-  height: 300;
+  width: 400;
+  height: 600;
 }
 
 .float-right {
@@ -509,7 +509,7 @@ a {
   .tm-box-5 {
     padding-top: 25px;
     padding-bottom: 25px;
-    height: 500px;
+    height: 600px;
   }
   .tm-section-mb {
     margin-bottom: 60px;
