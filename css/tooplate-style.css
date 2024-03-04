@@ -164,11 +164,11 @@ button:focus {
 
 .tm-slider-img,
 .slick-slide {
-  min-height: 250px;
+  min-height: 200px;
 }
 
 .tm-slider-img {
-  min-width: 500px;
+  min-width: 300px;
 }
 
 .footer {
