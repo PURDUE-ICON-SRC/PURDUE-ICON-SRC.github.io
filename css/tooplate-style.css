@@ -99,11 +99,6 @@ button:focus {
   padding-top: 60px;
 }
 
-.tm-section-5 {
-  padding-top: 60px;
-  background-color: gray;
-}
-
 .tm-section-4 {
   padding: 0px;
   padding-top: 100px;
@@ -142,7 +137,7 @@ button:focus {
   justify-content: center;
   padding-left: 25px;
   padding-right: 25px;
-  background: gray;
+  background: #f2f2f2;
 }
 
 .tm-media {
