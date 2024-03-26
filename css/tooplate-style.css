@@ -99,6 +99,12 @@ button:focus {
   padding-top: 60px;
 }
 
+.tm-section-5 {
+  padding-top: 60px;
+background-color: gray;
+  height: 300px;
+}
+
 .tm-section-4 {
   padding: 0px;
   padding-top: 100px;
