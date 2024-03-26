@@ -135,6 +135,8 @@ button:focus {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-top: 25 px;
+  padding-bottom: 25 px;
   padding-left: 25px;
   padding-right: 25px;
   background: #f2f2f2;
