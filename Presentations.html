@@ -188,7 +188,7 @@
                     </div> 
                 </div> -->
 
-                <!-- <div class="row">
+                <div class="row">
                     <div class="col-xl-12 col-lg-12 col-md-12">
                         <br>
                         <header  class="tm-text-gray text-center">
@@ -196,162 +196,86 @@
                         </header>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="BrooksButler"><b>Brooks Butler, Electrical and Computer Engineering, Ph.D</b></h3>
-                            <h4>Title: Collaborative Safe Formation Control for Coupled Multi-Agent Systems</h4>
+                            <h3 id="XiaohaoXu"><b>Xiaohao Xu, Robotics Department, University of Michigan Ann Arbor</b></h3>
+                            <h4>MAC-Ego3D: Multi-Agent Gaussian Consensus for Real-Time Collaborative Ego-Motion and Photorealistic 3D Reconstruction</h4>
                             <p>
-                                The safe control of multi-robot swarms is a challenging and active field of research, 
-                                where common goals include maintaining group cohesion while simultaneously avoiding 
-                                obstacles and inter-agent collision. Building off our previously developed theory for 
-                                distributed collaborative safety-critical control for networked dynamic systems, we 
-                                propose a distributed algorithm for the formation control of robot swarms given individual 
-                                agent dynamics, induced formation dynamics, and local neighborhood position and 
-                                velocity information within a defined sensing radius for each agent. Individual safety 
-                                guarantees for each agent are obtained using rounds of communication between neighbors 
-                                to restrict unsafe control actions among cooperating agents through safety conditions 
-                                derived from high-order control barrier functions (CBFs). One application of this algorithm is 
-                                to the control of drone swarms in forest fire surveillance where drones are to automatically 
-                                maximize sensor coverage of a designated area while simultaneously avoiding no-fly areas.
+                                Real-time multi-agent collaboration for ego-motion estimation and high-fidelity 3D reconstruction is vital for scalable spatial intelligence. However, traditional methods produce sparse, low-detail maps, while recent dense mapping approaches struggle with high latency. To overcome these challenges, we present MAC-Ego3D, a novel framework for real-time collaborative photorealistic 3D reconstruction via Multi-Agent Gaussian Consensus. MAC-Ego3D enables agents to independently construct, align, and iteratively refine local maps using a unified Gaussian splat representation. Through Intra-Agent Gaussian Consensus, it enforces spatial coherence among neighboring Gaussian splats within an agent. For global alignment, parallelized Inter-Agent Gaussian Consensus, which asynchronously aligns and optimizes local maps by regularizing multi-agent Gaussian splats, seamlessly integrates them into a high-fidelity 3D model. Leveraging Gaussian primitives, MAC-Ego3D supports efficient RGB-D rendering, enabling rapid inter-agent Gaussian association and alignment. MAC-Ego3D bridges local precision and global coherence, delivering higher efficiency, largely reducing localization error, and improving mapping fidelity. It establishes a new SOTA on synthetic and real-world benchmarks, achieving a 15x increase in inference speed, order-of-magnitude reductions in ego-motion estimation error for partial cases, and RGB PSNR gains of 4 to 10 dB. 
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="YueCao"><b>Yue Cao, Electrical and Computer Engineering, Ph.D</b></h3>
-                            <h4>Title: Ground Manipulator Primitive Tasks to Executable Actions Using Large Language Models</h4>
+                            <h3 id="Yunsheng"><b>Yunsheng, Lyles School of Civil and Construction Engineering, Purdue University</b></h3>
+                            <h4>Multimodal Task Alignment for BEV Perception and Captioning</h4>
                             <p>
-                                Layered architectures have been widely used in robot systems, where planning and execution 
-                                functions often operate in separate layers. Despite their widespread use, there still lacks 
-                                a straightforward way to transit from high-level tasks in the planning layer to low-level 
-                                motor commands in the execution layer. To address this gap, we introduce a novel approach 
-                                that utilizes large language models (LLMs) to ground the robot primitive tasks to low-level 
-                                actions. Our focus is on manipulator interaction control tasks. We designed a program-function-like 
-                                prompt based on the task frame formalism. In this way, we enable LLMs to generate position/force 
-                                set-points for hybrid control. 
+                                Bird's eye view (BEV)-based 3D perception plays a crucial role in autonomous driving applications. The rise of large language models has spurred interest in BEV-based captioning to understand object behavior in the surrounding environment. However, existing approaches treat perception and captioning as separate tasks, focusing on the performance of only one of the tasks and overlooking the potential benefits of multimodal alignment. To bridge this gap between modalities, we introduce MTA, a novel multimodal task alignment framework that boosts both BEV perception and captioning. MTA consists of two key components: (1) BEV-Language Alignment (BLA), a contextual learning mechanism that aligns the BEV scene representations with ground-truth language representations, and (2) Detection-Captioning Alignment (DCA), a cross-modal prompting mechanism that aligns detection and captioning outputs. MTA integrates into state-of-the-art baselines during training, adding no extra computational complexity at runtime. Extensive experiments on the nuScenes and TOD3Cap datasets show that MTA significantly outperforms state-of-the-art baselines, achieving a 4.9% improvement in perception and a 9.2% improvement in captioning. These results underscore the effectiveness of unified alignment in reconciling BEV-based perception and captioning. 
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="DemetriusGulewicz"><b>Demetrius Gulewicz, Mechanical Engineering, M.S. </b></h3>
-                            <h4>Title: Non-Linear Model Predictive Control of a Hybrid Thermal Management System</h4>
+                            <h3 id="JoseHoyos"><b>Jose Daniel Hoyos, Aeronautics and Astronautics Engineering, Purdue University </b></h3>
+                            <h4>Reward-Based Collision-Free Algorithm for Trajectory Planning of Autonomous Robots</h4>
                             <p>
-                                Hybrid thermal management systems (hybrid TMS) in their most basic form consist of a component 
-                                that generates heat, and a device that expels that heat. A thermal energy storage device (TES) 
-                                can be added to improve system performance. In addition, model predictive control (MPC) has been 
-                                shown to be effective and robust in the optimal control of many systems, including TMS. While many 
-                                have proposed controllers for hybrid TMS, many approximations are usually made to ensure computational 
-                                feasibility. We propose a single step controller (as opposed to a hierarchical approach) that enforces 
-                                the TES nonlinear phase change dynamics. In addition, our prediction model is a high state system, 
-                                containing 77 states. After synthesizing the controller, we also show experimental results of the MPC 
-                                implemented on a testbench.
+                                The classical Traveling Salesman Problem (TSP) has long been acknowledged as a foundational challenge in mathematical optimization and combinatorial theory, representing one of the earliest and most influential problems in the study of algorithmic efficiency and decision-making under constraints in discrete spaces. In this research, we extend the TSP to suit robotic missions. This extension involves the integration of feasible trajectory planning and control inputs required for navigation between waypoints, ensuring obstacle avoidance, maximizing cumulative rewards, and strictly adhering to constraints such as state variables, input derivatives, mission time windows, and maximum allowable distances. We address the challenge as a two-level problem, where the upper level determines the sequence of waypoints to be visited, and the lower level computes the optimal trajectory through the candidate sequence. For the first level, we propose a genetic algorithm that employs a dynamic time-warping-based crossover and mutation to explore the discrete design space. For the second level, we use clothoid curves and the differential flatness property. Constraints are enforced through a penalty method. Results demonstrate the algorithm’s ability to find the optimal waypoint sequence, satisfy constraints, avoid infeasible waypoints, and prioritize high-reward ones. Simulations and experiments with a ground vehicle, a quadrotor, and a quadruped illustrate the adaptability of the proposed approach.
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="WenjianHao"><b>Wenjian Hao, Aeronautics and Astronautics Engineering, Ph.D</b></h3>
-                            <h4>Title: Deep Koopman Learning of Nonlinear Time-varying Systems</h4>
+                            <h3 id="MichaelWozniak"><b>Michael Wozniak, Aeronautics and Astronautics Engineering, Missouri University of Science and Technology</b></h3>
+                            <h4>Actor-Critic Reinforcement Learning & Simulated Multi-Agent Docking</h4>
                             <p>
-                                This work presents a data-driven approach to approximate the dynamics of a nonlinear time-varying system 
-                                (NTVS) by a linear time-varying system (LTVS), which results from the Koopman operator and deep neural 
-                                networks. Analysis of the approximation error between states of the NTVS and the resulting LTVS is presented. 
-                                Simulations on a representative NTVS show that the proposed method achieves small approximation errors, 
-                                even when the system changes rapidly. Furthermore, simulations in an example of quadcopters demonstrate the 
-                                computational efficiency of the proposed approach.
+                                Docking is a critical maneuver that is vital to orbital applications such as on-orbit servicing and active space debris removal. The traditional spacecraft docking problem can be extended to a multi-agent problem by coordinating multiple chasers to dock with a single target. This work is built on the fundamental concepts of pose estimation, multi-agent rendezvous, and reinforcement learning. It implements a learning algorithm for simulated spacecraft docking represented by 6-DoF robotic arms in the experimental environment. The provided algorithm, Advantage Actor-Critic, is a multi-agent, model-free, gradient-free algorithm with Actor/Critic networks and duplicate target networks. The training outcomes of the algorithm are observed via reward/loss functions and final docking performance. The results include convergence to the optimal policy and stable learning of Actor/Critic networks. The optimal policy yields robustness in docking. After training is complete, every episode that purely exploits the learned policy successfully docks in the subject scenario. The algorithm invokes several simplifying assumptions that are driven by the computational complexity and learning convergence challenges of the subject problem formulation. The incremental relaxation of these assumptions is concluded as a path to a high-fidelity docking algorithm. This implementation proves that robust docking performance can be accomplished via reinforcement learning, demonstrated to be suitable to the experimental context of 6-DOF robotics. This algorithm ultimately paves the way for further innovation in docking concepts including reinforcement learning and the subsequent unification with pose estimation.
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="SMNahidMahmud"><b>S M Nahid Mahmud, Aeronautics and Astronautics Engineering, Ph.D</b></h3>
-                            <h4>Title: Adaptive Distributed Framework for Safety-critical Multi-agent Optimal Control Systems</h4>
+                            <h3 id="MadeleineYuh"><b>Madeleine Yuh, Mechanical Engineering, Purdue University</b></h3>
+                            <h4>Designing Cognitively Aware Intelligent Tutoring Systems for Psychomotor Learning</h4>
                             <p>
-                                The ability to complete additional tasks without redesigning the optimal control system from the beginning 
-                                provides significant flexibility in real-life applications. To facilitate this adaptability feature, tunable 
-                                parameters are often included in the dynamical model and/or objective function of the system. While an 
-                                approach known as Pontryagin Differentiable Programming (PDP) has been proven effective for tuning single 
-                                and multi-agent optimal control systems, previous studies have overlooked safety challenges such as inter-agent 
-                                constraints inherent in multi-agent systems. Inspired by PDP, this study proposes an adaptive distributed framework 
-                                for multi-agent safety-critical optimal systems where a network of agents cooperatively optimizes tunable parameters 
-                                to minimize the sum of their loss functions while ensuring safety. The main idea of the proposed framework relies on 
-                                integrating barrier function and gradient descent-based distributed optimization with a gradient generator that 
-                                captures the optimal performance as a function of the parameter in the feedback loop tuning the parameter for each 
-                                agent. Theoretical and simulation results are obtained to verify this proposed adaptive distributed framework for 
-                                safety-critical multi-agent optimal control systems.
+                                Intelligent Tutoring Systems (ITSs) mimic human tutors by closing the loop between learners and tutoring agents. However, developing ITSs for psychomotor learning is challenging, as assessing correctness in traditional contexts does not directly translate to evaluating correct performance in psychomotor tasks. Key challenges include creating a knowledge space of the task, personalizing the agent to the learner’s characteristics, and maintaining learner motivation. To address these issues, we propose a cognitively aware ITS for psychomotor learning. Cognitive factors such as self-confidence influence learners' self-efficacy and learning outcomes, yet their operationalization in psychomotor ITSs remains limited. Our system incorporates an automation assistance algorithm based on an optimal control policy designed to calibrate self-confidence relative to performance. This policy is trained using reinforcement learning methods with a self-confidence Markov Decision Process framework. Additionally, we introduce a learning stage classifier to quantitatively characterize novice-to-expert transitions, bridging qualitative and quantitative representations of learning stages. By combining learning stage classification, task performance metrics, and automation assistance, our system generates tailored formative feedback—positive, neutral, or negative—enhancing personalization. This approach addresses the three critical challenges of psychomotor ITS design, offering a framework for effective ITSs.
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="NicolasMiguel"><b>Nicolas Miguel, Aeronautics and Astronautics Engineering, Ph.D</b></h3>
-                            <h4>Title: Stochastic Formulations for Barrier Function-based Collision Avoidance</h4>
+                            <h3 id="JiyongKwon"><b>Jiyong Kwon, Mechanical Engineering, Purdue University</b></h3>
+                            <h4>Real-Time Acoustic Localization Using a 2D Microphone Array and MUSIC Algorithm for drone detection</h4>
                             <p>
-                                The use of barrier functions to provide provably safe collision guarantees in the field of optimal control is a 
-                                recent advancement. Taking advantage of the properties of set invariance provided by barrier function formulations, 
-                                control barrier functions (CBF) can be utilized as safety filters to ensure safety-critical control. Additionally, 
-                                when formulated as quadratic programs, CBFs provide faster real-time implementation, more flexibility, and improved 
-                                constraint handling over typical optimal control methods.
-                            </p>
-                            <p>
-                                Stochastic CBFs arise from the need to guarantee performance of CBFs even in stochastic environments, where Gaussian 
-                                noise can cause the system to take unsafe actions. We investigate the application of Stochastic CBF methodology into 
-                                collision-cone based barrier functions, and discuss future directions of theoretical research in the field.
+                                Real-time acoustic localization plays a vital role in drone detection, much like the way living organisms use sound cues to navigate their surroundings and detect threats. Drawing inspiration from natural sensing strategies, this project explores how a 2D microphone array can provide precise direction-of-arrival estimates by leveraging the subspace-based MUSIC algorithm. Similar to nature’s reliance on both active and passive sensing, our approach capitalizes on robust signal processing techniques to identify and track sound sources in dynamic environments. This talk will illustrate how the 2D microphone array is designed to capture and process incoming sound waves, offering high-resolution estimates of both azimuth and elevation angles. By separating the acoustic data into signal and noise subspaces, we demonstrate how the system can effectively localize drones in real time, even in the presence of background noise or other clutter. The presentation will include experimental insights from both indoor and outdoor scenarios, ranging from controlled tests with speaker-generated noise to flights of a quadcopter drone, to demonstrate the performance and adaptability of this acoustic localization strategy. While our results highlight accurate azimuth detection, we also reveal limitations in elevation estimation due to the single-plane microphone configuration. To address this, future work will explore adopting a 3D microphone array to improve elevation estimation. Additionally, efforts will focus on refining algorithms for noise reduction and false alarm detection, aiming to develop a more robust system for reliable drone detection under diverse operating conditions.
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="AyushRai"><b>Ayush Rai, Aeronautics and Astronautics Engineering, Ph.D</b></h3>
-                            <h4>Title: Closed-loop Neighboring Extremal Optimal Control Using HJ Equation</h4>
+                            <h3 id="JuanwuLu"><b>Juanwu Lu, College of Engineering, Purdue University</b></h3>
+                            <h4>Model-Agnostic Variational Inference for Uncertainty-Aware Motion Prediction</h4>
                             <p>
-                                This study introduces a method to obtain a neighboring extremal optimal control (NEOC) solution for a broad class of 
-                                nonlinear systems with non-quadratic performance indices by investigating the variation to a known closed-loop optimal 
-                                control law caused by small, known variations in the system parameters or in the performance index. The NEOC solution can 
-                                formally be obtained by solving a linear partial differential equation similar to those arising in an iterative solution 
-                                procedure for a nonlinear Hamilton-Jacobi equation. Motivated by numerical procedures for solving such an equation, we also 
-                                propose a numerical algorithm based on the Galerkin algorithm that uses basis functions to solve the underlying Hamilton-Jacobi 
-                                equation. This approach allows the determination of the minimum performance index as a function of both the system state and 
-                                parameters and extends to allow the determination of the adjustment to an optimal control law given a small adjustment of 
-                                parameters in the system or the performance index, effectively by computing the derivative of the law with respect to those 
-                                parameters. The validity of the claims and theory is supported by numerical simulations.
+                                Accurately predicting the future behavior of surrounding traffic participants is essential for the safety and robustness of autonomous vehicles. However, the inherent stochasticity and multimodality associated with human decisions raise the need to explicitly model the uncertainty and consider it in downstream planning and control. Existing works utilized goal candidates to identify destinations or directly predict a limited set of future trajectories based on latent features, where uncertainty about the predictions is often ignored. In this series of publications, we propose an algorithm for motion prediction that is model-agnostic and uncertainty-aware in the sense that it is compatible with any model trained with gradient descent and is capable of estimating variances and covariances along with each prediction. In the proposed approach, model parameters are learned by minimizing the KL divergence between a variational distribution and the ground-truth posterior distribution. We implemented a goal-based motion prediction model, GNeVA, and a sequence-to-sequence prediction model, SeNeVA, to demonstrate that this approach can achieve competitive performance compared to state-of-the-art methods on standard motion prediction benchmarks and provide practical distribution information about the predicted trajectories.
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="KaichangShi"><b>Kaichang Shi, Aeronautics and Astronautics Engineering, Ph.D</b></h3>
-                            <h4>Title: Differential Game of Two Pursuers and One Superior Evader</h4>
+                            <h3 id="AlexaLytle"><b>Alexa Lytle, Earth, Atmospheric, and Planetary Sciences, Purdue University</b></h3>
+                            <h4>Towards Optimization for the Coupled Electricity and CO2 Grid</h4>
                             <p>
-                                My work focuses on a pursuit-evasion differential game involving two slow pursuers and a fast evader, considering capture radius. 
-                                The Cartesian Oval (CO) is implemented to represent game parameters accurately. Depending on the gap type, pursuers have a capture 
-                                guarantee or both pursuers and evader have their own optimal strategy from nash equailibrum. Sub-obtimal strategies for both pursuer 
-                                side and evader side are proposed as well, which will significantly reduce the computational cost of finding the nash equilibrium 
-                                point of the game for optimal strategies. The study concludes that improved cooperation using reachable region analysis enhances 
-                                capture success, challenging the optimality of prior strategies.
+                                Addressing climate change necessitates innovative strategies to optimize energy systems and carbon capture and storage (CCS) technologies. This study proposes a systematic optimization framework for coupled electricity and carbon sequestration networks, aiming to minimize costs, reduce emissions, and enhance energy efficiency in Southeast Asia, a region with increasing energy demands, limited infrastructure, and significant climate vulnerabilities. We developed optimization models for carbon sequestration and electricity distribution networks using MATLAB's CVX program (Convex Optimization). The electricity network models generation, transmission, and demand to optimize energy production and sharing between countries while minimizing costs. The carbon sequestration network captures and transports CO2 to geological storage sites, focusing on cost-effectiveness and efficiency across capture, transport, and injection stages. These models were validated independently and integrated to assess resource-sharing potential and inter-country agreements. Preliminary results demonstrate that integrating electricity and carbon networks can significantly enhance cost efficiency and emission reductions compared to standalone approaches. This coupled system offers a scalable solution to address regional energy challenges while aligning with global climate goals. By leveraging linear power flow equations and optimization techniques, this study highlights the potential of coordinated network management in advancing sustainable development across Southeast Asia.
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="YuezhuXu"><b>Yuezhu Xu, Industrial Engineering, Ph.D</b></h3>
-                            <h4>Title: Learning Dissipative Neural Dynamical Systems</h4>
+                            <h3 id="SeanEven"><b>Sean Even, Electrical Engineering, Notre Dame University</b></h3>
+                            <h4>A variational approach to geometric mechanics for undulating robot locomotion</h4>
                             <p>
-                                Consider an unknown nonlinear dynamical system that is known to be dissipative. The objective of this paper is to learn a neural 
-                                dynamical model that approximates this system, while preserving the  dissipativity property in the model. In general, imposing 
-                                dissipativity constraints during neural network training is a hard problem for which no known techniques exist. In this work, 
-                                we address the problem of learning a dissipative neural dynamical system model in two stages. First, we learn an unconstrained 
-                                neural dynamical model that closely approximates the system dynamics. Next, we derive sufficient conditions to perturb the weights 
-                                of the neural dynamical model to ensure dissipativity, followed by perturbation of the biases to retain the fit of the model to the 
-                                trajectories of the nonlinear system. We show that these two perturbation problems can be solved independently to obtain a  neural 
-                                dynamical model that is guaranteed to be dissipative while closely approximating the nonlinear system. 
+                                Limbless organisms of all sizes use undulating patterns of self-deformation to locomote. Geometric mechanics, which maps deformations to motions, provides a powerful framework to formalize and investigate the theoretical properties and limitations of such modes of locomotion. However, the inherent level of abstraction poses a challenge when bridging the gap between theory or simulations and laboratory experiments. We investigate the challenges of modeling motion trajectories of an undulating robotic locomotor by comparing experiments and simulations performed with a variational integrator. Despite the extensive simplifications that the model based on a geometric variation principle entails, the simulations show good agreement on average. Notably, our approach merely requires the knowledge of the \emph{dissipation metric} -- a Riemannian metric on the configuration space, which can in practice be approximated by means closely resembling \emph{resistive force theory}.
                             </p>  
                         </div>
                         <br>
                         <div class="tm-box-6">
-                            <h3 id="HaoyangZheng"><b>Haoyang Zheng, Aeronautics and Astronautics Engineering, Ph.D</b></h3>
-                            <h4>Title: A Langevin Diffusion Process Perspective on Multi-Armed Bandits</h4>
+                            <h3 id="SohamPhanse"><b>Soham Shirish Phanse, Mechanical Engineering, University of Michigan Ann Arbor</b></h3>
+                            <h4>Exploration-Exploitation Guided Drone Fleet Dispatch Strategies in Uncertain Environments</h4>
                             <p>
-                                Langevin diffusion processes refer to a class of stochastic processes driven by Brownian motion. They have been widely used in various 
-                                sampling tasks in machine learning. I will discuss with Langevin diffusion, gradient Langevin algorithms, and how this powerful tool 
-                                can be used in the analysis and implementation of reinforcement learning algorithms (Thompson sampling). In particular, I will go over 
-                                two topics: sampling from gradient Langevin diffusion with Markov Chain Monte Carlo, and its application in multi-armed bandits. More 
-                                information can be found <a href="https://arxiv.org/abs/2401.11665"> here</a>.
+                                Uncrewed aerial systems (UAS) fleets and larger air taxi vehicles comprise new airspace entrants that target previously unserved or underserved air mobility-based operations. A significant portion of such operations are envisioned to take place within the airspace proximate to and within major urban areas. In addition to civilian and commercial use cases, there is also military interest in the usage of UAS, particularly within a battle space awareness context. In both urban civilian and military battle space applications, the fleet-wide management of environmental uncertainty will be critical to UAS mission success: such uncertainties include, e.g., urban micro-weather, wind conditions, and hazardous airspace monitored by adversaries, among others. In this work, we propose a multi armed bandit based exploration-exploitation framework that leverages differing fleet priorities to simultaneously explore (using lower-priority missions) and exploit (using higher-priority missions) the unknown environment. Using the example application of urban wind flow fields, we show that a Thompson sampling-inspired exploration approach produces more optimal results, as measured by regret-like performance metrics.
                             </p>  
                         </div>
                     </div>
-                </div> -->
+                </div>
         </section>
 
         <footer class="mt-5">
