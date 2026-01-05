@@ -15,6 +15,7 @@
 
     -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
     <!-- Google web font "Open Sans" -->
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
     <!-- Font Awesome -->
@@ -81,15 +82,72 @@
         @media (min-width: 1200px) { .corp-img { height: 240px; } }
         /* Register button (Purdue gold) */
         .register-btn {
-            background-color: #CFB991;
-            border-color: #CFB991;
+            background-color: #c8a24a;
+            border-color: #c8a24a;
             color: #000000;
+            font-size: 1.6rem;
+            padding: 16px 42px;
         }
         .register-btn:hover,
         .register-btn:focus {
-            background-color: #BFA46F;
-            border-color: #BFA46F;
+            background-color: #a98530;
+            border-color: #a98530;
             color: #000000;
+        }
+        /* Simple hero image with top preserved */
+        .hero-simple {
+            padding: 0;
+            margin-top: 0;
+            width: 100%;
+            height: clamp(220px, 50vw, 520px);
+            background-image: url('img/tm-bg-section-4.jpg');
+            background-size: cover;
+            background-position: center 45%; /* nudge view up a bit to trim more bottom */
+            background-repeat: no-repeat;
+            overflow: hidden;
+        }
+        .hero-simple.tm-section-mb {
+            margin-bottom: 16px; /* tighten gap to heading */
+        }
+        /* Dark wrapper for hero + heading */
+        .hero-wrapper {
+            background: #000;
+            padding-bottom: 35px;
+        }
+        .hero-heading h1,
+        .hero-heading h4 {
+            color: #ffffff;
+        }
+        .hero-heading header {
+            padding-top: 25px;
+        }
+        /* Reduce padding above the main heading block */
+        #top {
+            padding-top: 18px;
+        }
+
+        /* Countdown Timer Styles */
+        .countdown-container {
+            margin-top: 30px;
+            color: #c8a24a;
+            font-family: 'Orbitron', sans-serif;
+            text-align: center;
+        }
+        .countdown-timer {
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        .countdown-label {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            color: #ffffff;
+            margin-top: 5px;
+            letter-spacing: 1px;
+        }
+        .countdown-item {
+            display: inline-block;
+            margin: 0 15px;
         }
     </style>
 
@@ -112,12 +170,50 @@
             <a href="Contact.html">Contact</a>
         </div>
 
-        <section class="tm-section-head" id="top">
-            <header id="header" class="text-center tm-text-gray">
-                <h1>ICON Student Research Conference 2026</h1>
-                <h4>Thursday January 29th - Friday January 30th, 2026 at the Rice Design Studio (MSEE 190), Purdue University.</h4>
-                <br>
-            </header>
+        <div class="hero-wrapper">
+            <section class="hero-simple tm-section-mb" id="tm-section-4">
+            </section>
+
+            <section class="tm-section-head hero-heading" id="top">
+                <header id="header" class="text-center">
+                    <h1>ICON Student Research Conference 2026</h1>
+                    <h4>January 29th - January 30th</h4>
+                    <h4>Rice Design Studio (MSEE 190), Purdue University</h4>
+                    <div class="countdown-container">
+                        <div class="countdown-item">
+                            <div id="weeks" class="countdown-timer">00</div>
+                            <div class="countdown-label">Weeks</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div id="days" class="countdown-timer">00</div>
+                            <div class="countdown-label">Days</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div id="hours" class="countdown-timer">00</div>
+                            <div class="countdown-label">Hours</div>
+                        </div>
+                        <div class="countdown-item">
+                            <div id="minutes" class="countdown-timer">00</div>
+                            <div class="countdown-label">Minutes</div>
+                        </div>
+                    </div>
+                    <br>
+                </header>
+            </section>
+        </div>
+
+        <section class="tm-section-3 tm-section-mb mt-5" id="Registration">
+            <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                <header id="header" class="text-center">
+                    <h2>Registration is now open</h2>
+                    <div class="mt-3">
+                        <a href="https://forms.gle/4rqyYm2fcnYPzpGv8" class="btn btn-lg register-btn" target="_blank" rel="noopener">Register</a>
+                    </div>
+                    <br>
+                </header>            
+                </div>
+            </div>
         </section>
 
         <section class="tm-section-2 tm-section-mb" id="Mission">
@@ -178,26 +274,6 @@
                         interaction, infrastructure systems control and optimization, and autonomy 
                         validation and verification.
                     </p>
-                </div>
-            </div>
-        </section>
-
-
-        <section class="tm-section-3 tm-section-mb" id="Registration">
-            <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12">
-                <header id="header" class="text-center tm-text-gray">
-                    <hr>
-                    <h1>Registration</h1>
-                    <h4>Register for ICON SRC 2026</h4>
-                    <div class="mt-3">
-                        <a href="https://forms.gle/4rqyYm2fcnYPzpGv8" class="btn btn-lg register-btn" target="_blank" rel="noopener">Register</a>
-                    </div>
-                    <!-- <h4>Abstract submissions are now closed.</h4> -->
-                    <p>The abstract submissions are now closed</a>.</p>
-
-                    <hr>
-                </header>            
                 </div>
             </div>
         </section>
@@ -316,7 +392,7 @@
                                     <td>13:00</td>
                                 </tr>
                                 <tr>
-                                    <td><strong>Industry Demonstration</strong></td>
+                                    <td><strong>Industry & Lab Demonstration</strong></td>
                                     <td>13:00</td>
                                     <td>16:30</td>
                                 </tr>
@@ -337,12 +413,6 @@
                     </iframe>
                 </div>
                 <!-- <div class="col-md-1 tm-mb-sm-1 tm-2col-l "></div> -->
-            </div>
-        </section>
-
-        <section class="tm-section-4 tm-section-mb" id="tm-section-4">
-            <div class="row">
-
             </div>
         </section>
 
@@ -612,6 +682,31 @@
             $('.nav-link').click(function () {
                 $('#mainNav').removeClass('show');
             });
+
+            // Countdown Timer
+            function updateCountdown() {
+                const targetDate = new Date('2026-01-29T21:00:00-05:00').getTime();
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    document.querySelector('.countdown-container').innerHTML = "EVENT STARTED";
+                    return;
+                }
+
+                const weeks = Math.floor(distance / (1000 * 60 * 60 * 24 * 7));
+                const days = Math.floor((distance % (1000 * 60 * 60 * 24 * 7)) / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+                document.getElementById('weeks').innerText = weeks.toString().padStart(2, '0');
+                document.getElementById('days').innerText = days.toString().padStart(2, '0');
+                document.getElementById('hours').innerText = hours.toString().padStart(2, '0');
+                document.getElementById('minutes').innerText = minutes.toString().padStart(2, '0');
+            }
+
+            setInterval(updateCountdown, 60000); // Update every minute
+            updateCountdown(); // Initial call
 
             // https://css-tricks.com/snippets/jquery/smooth-scrolling/
             // Select all links with hashes
