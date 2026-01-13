@@ -7,22 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>ICON Student Research Conference</title>
-    <!--
-
-    Template 2103 Central
-
-	http://www.tooplate.com/view/2103-central
-
-    -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
-    <!-- Google web font "Open Sans" -->
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <link rel="stylesheet" href="css/tooplate-style.css">
-    <!-- tooplate style -->
 
     <script>
         var renderPage = true;
@@ -34,42 +24,6 @@
             renderPage = false;
         }
     </script>
-    <style>
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-        }
-
-        th {
-        border: 1px solid #dddddd;
-        background-color: #2b2b2b;
-        color: #d6d6d6;
-        size:20pt;
-        text-align: left;
-        padding: 8px;
-        }
-
-        td {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-        }
-
-        tr:nth-child(even) {
-        background-color: #ffc670;
-        }
-        
-        hr {
-        border: 0;
-        clear:both;
-        display:block;
-        width: 96%;               
-        background-color:#2b2b2b;
-        height: 1px;
-        }
-    </style>
-
 </head>
 
 <body>
@@ -85,233 +39,22 @@
             <a href="./#Registration">Registration and Abstract Submission</a>
             <a href="./#Schedule">Schedule</a>
             <a class="active" href="./#Information">Events</a>
+            <a href="./#CorporatePartnership">Corporate Partnership</a>
             <a href="./Contact">Contact</a>
         </div>
 
-        <section class="tm-section-2 tm-section-mb" id="Presentations">
-
+        <section class="tm-section-2 tm-section-mb" id="Posters">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12">
-                    <br>
-                    <header  class="tm-text-gray text-center">
-                        <h1>Demonstration Abstracts</h1>
-                    </header>
-                    <br>
-
-                    <div class="tm-box-6">
-                        <h3><b>Origami Inspired Soft Robotic Arm: A Platform for Manipulation</b></h3>
-                        <h4 id="YuchenYou">Yuchen You, Robotics Department, University of Michigan</h4>
-                        <p>
-                            Soft pneumatic robotic arms have recently emerged as promising alternatives to their rigid counterparts, providing greater flexibility and safer human-robot interactions. However, existing designs typically suffer from non-reconfigurable structures and rely on bulky external pneumatic systems, which restrict their range of applications. Here, we present a lightweight, modular, and electronics-integrated pneumatic soft robotic arm that can reach, sense, and interact across a broad operational domain. By simply adding or removing modules in a plug-and-play manner, the total length of the arm can be tailored to specific tasks. Composed of three parallel 3D-printed Kresling origami actuators, each slave module integrates 3D actuation, real-time proprioception, and robust communication with the base (master) module, resulting in a versatile and compact system. Experiments showed the arm’s adaptability to various workspaces by adjusting the number of modules and demonstrated its capability to dynamically and accurately track the tip’s trajectory. Potential applications include mobile platform urban delivery systems and warehouse automation, where the arm’s lightweight and modular design offers significant advantages.
-                        </p>  
-                    </div>
-                    <br>
-
-                    <div class="tm-box-6">
-                        <h3><b>Optimal design of direct drive five-bar linkages for high payload manipulator and a mode-switching gripper</b></h3>
-                        <h4 id="ShashankRamesh">Shashank Ramesh, Aerospace and Mechanical Engineering, University of Notre Dame</h4>
-                        <p>
-                            The kinematic configuration space of a manipulator determines the set of all possible motions that may occur, and its differential properties have a strong, albeit indirect, influence on both static and dynamic performance. In this work, we show that high payload capacity, low power consumption, and high sensitivity to end-effector forces for a five-bar linkage can be achieved by tuning its first-order kinematic properties. By viewing first-order kinematics as a field of Jacobian-defined ellipses across a workspace, novel five-bar linkages are designed and tested in this work for their benefits. For a five-bar manipulator with high payload capacity, the horizontal direction is biased toward speed to move across the width of the workspace quickly. In contrast, the vertical direction is biased toward force production to resist gravitational loads. The latter bias endows the manipulator with load capacity in the absence of gears. Such an exclusion can forego the extra weight, complexity, backlash, transmission losses, and fragility of gearboxes. Additionally, a direct drive set-up improves backdrivability and transparency. The latter is relevant to applications that involve interacting with the environment or people. Our novel design is set through an array of theoretical and experimental performance studies in comparison to a conventional direct drive manipulator. The experimental results showed a 3.75x increase in payload capacity, a 2x increase in dynamic tracking accuracy, a 2.07x increase in dynamic cycling frequency, and at least a 3.70x reduction in power consumption, considering both static and dynamic experiments. Using the same design concept of shaping velocity ellipses, the optimal synthesis of a novel gripper with five-bar linkages as its fingers are carried out. The gripper was built and tested. It transitions between two different modes: sense mode and grip mode. Sense mode can sense forces 3 times smaller than grip mode. Grip mode can exert forces 4 times greater than sense mode.
-                        </p>  
-                    </div>
-                    <br>
-
-                    <div class="tm-box-6">
-                        <h3><b>Image-Guided Trajectory Generation and Light Painting Simulation for Enhanced Robotic Manipulation and Fabrication</b></h3>
-                        <h4 id="RenhongZhang">Renhong Zhang, College of Engineering, Purdue University</h4>
-                        <p>
-                            This paper introduces a systematic framework for image-guided trajectory generation and light painting simulation, combining methodologies from robotics and visual computing. By integrating optimized path planning with advanced simulation techniques, the proposed approach extracts efficient trajectories from binary images and synthesizes photorealistic long-exposure effects from video inputs. The framework employs curve optimization, hybrid sequencing, and GPU-accelerated algorithms to achieve precision and computational efficiency while addressing challenges such as trajectory smoothness and visual coherence. Implemented within a ROS2 environment, the framework has been validated through testing and visualization on a Universal Robots UR3e robot. Its generalizable design supports applications across various domains, including robotic drawing, writing, and task optimization, and is adaptable to different platforms such as robotic arms and 3D printers. The findings underscore the framework’s practicality for deployment, its versatility in addressing diverse robotic and fabrication scenarios, and its contribution to enhancing robot manipulation tasks by enabling precise control and trajectory execution.
-                        </p>  
-                    </div>
-                    <br>
-
-                    <div class="tm-box-6">
-                        <h3><b>Designing Cognitively Aware Intelligent Tutoring Systems for Psychomotor Learning</b></h3>
-                        <h4 id="MadeleineYuh">Madeleine Yuh, Mechanical Engineering, Purdue University</h4>
-                        <p>
-                            Intelligent Tutoring Systems (ITSs) mimic human tutors by closing the loop between learners and tutoring agents. However, developing ITSs for psychomotor learning is challenging, as assessing correctness in traditional contexts does not directly translate to evaluating correct performance in psychomotor tasks. Key challenges include creating a knowledge space of the task, personalizing the agent to the learner’s characteristics, and maintaining learner motivation. To address these issues, we propose a cognitively aware ITS for psychomotor learning. Cognitive factors such as self-confidence influence learners' self-efficacy and learning outcomes, yet their operationalization in psychomotor ITSs remains limited. Our system incorporates an automation assistance algorithm based on an optimal control policy designed to calibrate self-confidence relative to performance. This policy is trained using reinforcement learning methods with a self-confidence Markov Decision Process framework. Additionally, we introduce a learning stage classifier to quantitatively characterize novice-to-expert transitions, bridging qualitative and quantitative representations of learning stages. By combining learning stage classification, task performance metrics, and automation assistance, our system generates tailored formative feedback—positive, neutral, or negative—enhancing personalization. This approach addresses the three critical challenges of psychomotor ITS design, offering a framework for effective ITSs.
-                        </p>  
-                    </div>
-                    <br>
-                    
-                 
+                <div class="col-xl-12 col-lg-12 col-md-12 text-center">
+                    <br><br>
+                    <h2 class="tm-text-gray">TBA: Detailed Poster and Demos schedule will be posted soon</h2>
+                    <br><br>
                 </div>
             </div>
-    </section>
-
-        <section class="tm-section-2 tm-section-mb" id="Presentations">
-
-                <div class="row">
-                    <div class="col-xl-12 col-lg-12 col-md-12">
-                        <br>
-                        <header  class="tm-text-gray text-center">
-                            <h1>Poster Abstracts</h1>
-                        </header>
-                        <br>
-                        
-                        <div class="tm-box-6">
-                            <h3><b>Robust Co-Design of a Thermal Management System</b></h3>
-                            <h4 id="DemetriusGulewicz">Demetrius Gulewicz, Mechanical Engineering, Purdue University</h4>
-                            <p>
-                                Control co-design (CCD) techniques are effective design tools for systems with highly transient operation, such as vehicle power and thermal management systems, where electrification necessitates a shift away from steady-state cooling solutions to transient thermal management that can respond to dynamic heat generation. The primary control objective of such systems is guaranteeing robustness to uncertainty in exogenous disturbance signals.  Set-based methods are well suited for solving such optimization problems due to their ability to guarantee satisfaction of safety constraints. While a principal challenge with set-based methods is their computational expense, recent work has provided new ways to exactly and efficiently conduct set-based optimization for mixed logical dynamical (MLD) systems. In this work, we show how these methods can be applied to the problem of robust CCD for a hybrid thermal management system subject to a time-varying disturbance set.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Interpretable Autonomy: Using Mixture-of Experts for End-to-End Self-Driving</b></h3>
-                            <h4 id="ManavGagvani">Manav Gagvani, Electrical and Computer Engineering, Purdue University</h4>
-                            <p>
-                                In this work, we propose a machine learning pipeline for estimating control inputs of an automated vehicle through the paradigm of imitation learning. Compared to approaches which use a single CNN or Transformer-based feature extractor, we partition the training dataset by driving scenario and road conditions. Separate feature extractors are trained on each partition, before being combined into an intermediate representation. The control inputs, steering and throttle, are estimated through a multi-layer perceptron which acts as a gating network, using the intermediate representation as the input. The proposed architecture is validated through simulations, demonstrating that it outperforms baseline algorithms and can robustly navigate a vehicle through complex scenarios with traffic. Furthermore, we show the interpretability of our model by measuring the correlation between feature activations corresponding to each inferred driving scenario, and ground truth.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>BEV-LLM: Bird's-Eye-View Reasoning on Driving Scene with Large Language Model</b></h3>
-                            <h4 id="SungYeonPark">Sung-Yeon Park, Lyles School of Civil and Construction Engineering, Purdue University</h4>
-                            <p>
-                                Interpretable decision-making is pivotal in autonomous driving, yet the integration of natural language models remains relatively unexplored. With the advancement of large language models (LLMs), vision-based reasoning has shown potential for enhancing interpretability. However, recent works on multi-modal LLMs in autonomous driving primarily utilize front-view images, neglecting the comprehensive environmental data provided by multi-view cameras. Additionally, these approaches often fail to capture temporal relationships, focusing solely on single image-based understanding. Furthermore, there is a notable lack of high-quality QA captioned video datasets specific to these tasks, which are crucial for training multi-modal LLMs to effectively understand driving scenes. To address these gaps, we introduce Bird's-Eye-View (BEV)-LLM, which incorporates BEV and front-view video features through two separate branches as inputs to the LLM. This design enhances the performance of multi-modal LLMs by integrating multi-camera information and leveraging the generalized reasoning ability of LLMs on front-view videos. Additionally, we present a multi-modal instruction tuning dataset that aids LLMs in learning visual instructions across diverse driving scenarios. Fine-tuned on our instruction-following dataset, BEV-LLM demonstrates proficient interpretive capabilities across a wide range of driving situations.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Bioinspired, Modular, Hybrid Quadruped Robot with Multifunctional Appendages for Enhanced Underwater Exploration and Object Manipulation</b></h3>
-                            <h4 id="AbuSiddiquee">Abu Nayem Md Asraf Siddiquee, Electrical Engineering, University of Notre Dame</h4>
-                            <p>
-                                Animals possess multifunctional appendages that serve purposes beyond locomotion, enabling them to perform various tasks to adapt to diverse environments [Yen, 2013]. Inspired by the aquatic walking animals, we developed a modular, multi-legged, soft-rigid bodied, pneumatic robot capable of navigation, manipulation, and transporting objects in underwater settings. We developed a soft appendage with a single actuation chamber that functions as a knee joint, allowing the lower portion of the appendage to bend backward when actuated. We conducted FEA simulations to analyze its bending behavior and generated forces to predict its performance in real-world. Using this appendage, we developed an Arduino-controlled quadruped robot capable of moving forward, backward, and steering left or right, and tested it underwater. Utilizing a lateral-sequence gait, the robot achieved forward movement at 8.39 mm/s and backward movement at 5.19 mm/s, with turning speeds of 0.85◦/s to the left and 0.732◦/s to the right. Adding the same two appendages as grippers, we further investigated the robot’s grasping and transporting capabilities. The robot successfully grasped objects with varying rigidity ranging from eggs to plastic boxes, moving at 5.73 mm/s with an egg (75 g) and 5.19 mm/s with a box (125 g). The robot effectively showcased its maneuverability, object manipulation, and transportation capabilities in an aquatic setting, reinforcing its potential for underwater rescue missions and handling delicate marine creatures.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Initial Distribution Sensitivity of Constrained Markov Decision Processes</b></h3>
-                            <h4 id="AlperenTercan">Alperen Tercan, Electrical Engineering, University of Michigan</h4>
-                            <p>
-                                Constrained Markov Decision Processes (CMDPs) are notably more complex to solve than standard MDPs due to the absence of universally optimal policies across all initial state distributions. This necessitates re-solving the CMDP whenever the initial distribution changes. In this work, we analyze how the optimal value of CMDPs varies with different initial distributions, deriving bounds on these variations using duality analysis of CMDPs and perturbation analysis in linear programming. Moreover, we show how such bounds can be used to compute sets of initial conditions that are epsilon-optimal and epsilon-feasible.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>A Multi-state Graph-based Approach for Dynamic Modeling of Refrigerant to Thermal Energy Storage Heat Exchanger/b></h3>
-                            <h4 id="JosephBroniszewski">Joseph Broniszewski, Mechanical Engineering, Purdue University<</h4>
-                            <p>
-                                Managing misalignment between the supply and demand of power on the electrical grid is becoming increasingly important with the growing reliance on renewable energy produced from sources such as solar and wind. Building HVAC systems play an important role on this system given that they constitute a substantial electrical load on the grid.  To address this challenge, the use of thermal energy storage is being explored for its ability to shift electrical loads to more ideal times of the day. Although thermal energy storage offers a potential advantage for grid management, the notoriously nonlinear and complex dynamics of such systems can present difficulty in modeling them. To enable dynamic analysis and control of thermal management components utilizing thermal energy storage, models that appropriately balance the trade-off between fidelity and computational complexity are needed. This work proposes a new application of a previously developed multi-state graph-based modeling approach specifically for developing a low-order dynamic model of a refrigerant to thermal energy storage heat exchanger. Vertices in this graph-based framework can represent multiple states within each control volume, e.g. pressure and enthalpy of refrigerant. Edges connecting vertices represent the flow of either energy or mass from one control volume to another. By utilizing this multi-state graph-based modeling approach, a model has been built that can leverage the computational benefits of graph-based modeling while offering sufficient fidelity to enable the design and synthesis of estimation and control strategies for HVAC systems with integrated thermal energy storage. 
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Calibrating Human Trust in Automation with Custom Control Policies</b></h3>
-                            <h4 id="MargaretWielatz">Margaret Wielatz, Mechanical Engineering, Purdue University</h4>
-                            <p>
-                                Human interaction with autonomous technology is becoming increasingly prevalent, resulting in a greater need to calibrate human trust to ensure appropriate reliance on automation. It has been established that humans exhibit distinct trust behaviors towards automation; as an example, some individuals can be categorized as “followers” who exhibit high compliance with recommendations from an intelligent decision aid. It has also been shown that based on a human’s trust behavior, the optimal control policy for calibrating trust—that is, mitigating over-trust and under-trust—can differ substantially. In this work, we consider the context of human interaction with an intelligent decision aid that assists the human to surveil buildings in a simulated reconnaissance mission. The transparency of the user interface, i.e. the amount of information communicated to the human by the decision aid, can vary based on an optimal policy designed to calibrate the user’s trust to the decision aid’s reliability. Based on prior work which identified two dominant trust behaviors exhibited by participants in this study through iterative model training and clustering of the human data using a partially observable Markov decision process (POMDP), we revisit the study and now classify participants online into each of these two groups, called “Followers” and the “Preservers.”  The Followers tend to have high trust in automation, while the Preservers tend to have low trust in automation. We test the hypothesis that an adaptive transparency policy synthesized based on a trust model specific to either trust behavior will outperform a policy synthesized for a trust model that represents the entire participant population.  Note that the same reward function is maximized in each case such that the only difference is the model used for computing the optimal policy. Based on data collected from 29 participants, we show that there was greater compliance using the general control policy compared to the custom control policies, demonstrating that the custom control policies helped mitigate over-trust in the decision aid. 
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Leveraging Perturbation Robustness to Enhance Out-of-Distribution Detection</b></h3>
-                            <h4 id="WenxiChen">Wenxi Chen, Mechanical Engineering, Purdue University</h4>
-                            <p>
-                                Out-of-distribution (OOD) detection is the task of identifying inputs that deviate from the training data distribution. This capability is essential for the safe deployment of deep computer vision models in open-world environments. In this work, we propose a post-hoc method, Perturbation-Rectified OOD detection (PRO), based on the insight that prediction confidence for OOD inputs is more susceptible to reduction under perturbation than IND inputs. From this observation, we proposed a meta-score function that searches for local minimum scores near original inputs by applying gradient descent. This procedure enhances the separability between in-distribution (IND) and OOD samples. Importantly, the approach improves OOD detection performance without complex modifications to the underlying model architectures or training protocol. To validate our approach, we conduct extensive experiments using the OpenOOD benchmark.  Our approach further pushes the limit of softmax-based OOD detection and is the leading post-hoc method for small-scale models. On a CIFAR-10 model with adversarial training, PRO effectively detects near-OOD inputs, achieving a reduction of more than 10\% on FPR@95 compared to state-of-the-art methods. 
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Collaborative Perception for Autonomous System</b></h3>
-                            <h4 id="JuntongPeng">Juntong Peng, Electrical and Computer Engineering, Purdue University</h4>
-                            <p>
-                                Collaborative perception leverages the collective intelligence of multiple agents to overcome the inherent limitations of single-agent perception systems, enabling enhanced situational awareness and decision-making. By integrating data and insights from various agents—such as vehicles, drones, or robots—collaborative perception significantly extends the range, accuracy, and robustness of perception in complex and dynamic environments. This approach is particularly transformative in applications like autonomous driving and search and rescue operations. In autonomous driving, collaborative perception allows vehicles to share real-time sensor data, enabling advanced capabilities such as predicting occluded hazards, optimizing traffic flow, and enhancing safety in urban and highway settings. Similarly, in search and rescue scenarios, teams of heterogeneous agents can collaboratively map disaster zones, locate victims, and assess environmental risks, ensuring faster and more efficient responses. This paper explores the methodologies, challenges, and breakthroughs in multi-agent perception, highlighting its critical role in achieving a higher level of autonomy and operational reliability in mission-critical domains.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Investigating the Impact of Spinal Joint Dynamics on a Sprawling Robot Using Deep Reinforcement Learning</b></h3>
-                            <h4 id="AzhangNazaripouya">Azhang Nazaripouya, Electrical Engineering, University of Notre Dame</h4>
-                            <p>
-                                Body undulation in sprawling locomotion offers benefits such as enhanced stability, maneuverability, and adaptability across diverse terrains. Although previous studies have emphasized the role of the flexible spine in facilitating movement and adaptive responses, they often focused on open-loop gaits without accounting for dynamic environmental interactions. This paper addresses this limitation by employing two reinforcement learning algorithms, Soft Actor-Critic (SAC) and Twin Delayed Deep Deterministic Policy Gradient (TD3), to train all joints of a salamander-inspired robot, including an active spinal joint. Our approach leads to an optimal strategy for efficiently navigating to a target in dynamic environments and effectively managing environmental uncertainties. The RL agent is trained to walk faster and more efficiently by coordinating its limb and spinal joints. The results are compared with those of a robot using footfall patterns derived from the Hildebrand gait formula. Our findings demonstrate that incorporating reinforcement learning as the control algorithm and having an active spinal joint can significantly enhance the locomotion capabilities of the robot. This advancement underscores the potential of adaptive spinal control in improving robotic mobility and performance.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>A Bioinspired Soft-Flagellated Robotic Swimmer for Low Reynolds Number Environments</b></h3>
-                            <h4 id="ElifAydin">Elif Pinar Aydin, Electrical Engineering, University of Notre Dame</h4>
-                            <p>
-                                Locomotion at low Reynolds number presents unique challenges for microrobot design due to the dominance of viscous forces over inertial forces, which renders conventional propulsion methods ineffective. Inspired by micro-animals like zoospores, bacteria, and algae, this study explores novel locomotion strategies that harness asymmetrical, non-reciprocal motion to achieve effective propulsion in viscous environments. Zoospores, in particular, demonstrate remarkable swimming capabilities through the coordinated beating of two oppositely placed flagella, achieving both high speed and maneuverability. By mimicking these biological strategies and incorporating soft flagella, which will also facilitate future studies on turning behavior, this research aims to enhance soft-robot design for improved energy efficiency, propulsion, and control. The findings have potential applications in targeted drug delivery, precision medical procedures, environmental monitoring, and hazardous environment maintenance, enhancing adaptability and maneuverability in complex environments. This study contributes to advancing the development of microrobots capable of operating effectively in low Reynolds number environments by leveraging bio-inspired design principles.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Sea Turtle-Inspired Adaptive Gait Strategies for Multi-Terrain Robotic Locomotion</b></h3>
-                            <h4 id="NnamdiChikere">Nnamdi Chikere, Electrical Engineering, University of Notre Dame</h4>
-                            <p>
-                                Inspired by sea turtles’ navigation through diverse environments using their flippers—gliding effortlessly through oceans and traversing rugged shores—we developed a servo-driven, 3D printed sea turtle hatchling-like robot (L=12.5cm, W=10.8cm, six joints, 513gr) with four flippers of varying stiffness to study how different morphological parameters and gait patterns impact performance on complex terrains. We evaluated the performance of various gaits on surfaces ranging from sandy shores to rocky trails, using both soft and rigid flippers. The results show that adapting gait patterns and flipper stiffness to terrain types consistently achieved enhanced forward displacement compared to trials using fixed gaits with both soft and rigid flippers. With soft flippers, we obtained 0.66 ± 0.01 body lengths/cycle (BL/cycle), with the adaptive gait surpassing the alternating ’diagonal gait’ at 0.59 ± 0.01 BL/cycle and the synchronous ’all together gait’ at 0.40 ± 0.01 BL/cycle. This pattern was consistent even when employing rigid flippers, with the adaptive gait configuration leading at 0.67 ± 0.01 BL/cycle. These findings highlight the advantages of integrating adaptive gait patterns and appendage stiffness into robotic designs, markedly enhancing navigation and endurance in unpredictable and complex environments.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Enhancing Convergence of  Decentralized  Gradient Tracking  under the KL Property</b></h3>
-                            <h4 id="XiaokaiChen">Xiaokai Chen, School of Industrial Engineering, Purdue University</h4>
-                            <p>
-                                We study decentralized multiagent optimization over networks, modeled as undirected graphs. The optimization problem consists of minimizing a nonconvex smooth function plus a convex extended-value function, which enforces constraints or extra structure on the solution (e.g., sparsity, low-rank). We further assume that the objective function satisfies the Kurdyka-Łojasiewicz (KL) property, with given exponent   theta in [0,1). The KL property  is satisfied by several (nonconvex) functions of practical interest, e.g., arising from machine learning applications; in the centralized setting, it permits to achieve strong convergence guarantees. Here we establish  convergence of the same type for  the notorious  decentralized gradient-tracking-based algorithm SONATA. Specifically, (i) when theta in (0,1/2],  the sequence generated by SONATA converges to a stationary solution of the problem at  R-linear rate; (ii) when  theta in (1/2,1),  sublinear rate  is certified; and finally (iii)   when theta=0, the iterates will either converge in a finite number of steps or converges at R-linear rate. This matches the convergence behaviour of centralized proximal-gradient algorithms except when theta=0. Numerical results validate our theoretical findings.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Deep Reinforcement Learning for Epidemic Control Using the SIS Model</b></h3>
-                            <h4 id="SabaSamadi">Saba Samadi, Electrical and Computer Engineering, Purdue University</h4>
-                            <p>
-                                In this project, we propose a new approach to reduce the infection spread among individuals in a networked Susceptible-Infected-Susceptible (SIS) model. Our method assumes an agent can adjust the strength of its connections with neighbors. An agent is randomly chosen to learn about its local network and implement strategies to minimize infection spread over 20,000 episodes. We leverage the Deep Deterministic Policy Gradient (DDPG) algorithm, a Deep Reinforcement Learning (DRL) algorithm, to solve this problem. We implement and evaluate this approach for different sizes of graphs and various configurations. Additionally, we examine cooperative multi-agent scenarios where agents collaborate to control the spread of infections.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Evaluating Offline Reinforcement Learning Algorithms for Autonomous Navigation in Simulated Grid-World Environments</b></h3>
-                            <h4 id="UditEkansh">Udit Ekansh, Purdue University</h4>
-                            <p>
-                                Offline reinforcement learning (RL) provides a framework for training policies using pre-collected datasets, reducing the need for extensive online exploration. This study investigates offline RL algorithms for grid-world navigation, utilizing a dataset generated by the A* path-planning algorithm on a 2D occupancy grid based on a realistic environment map created in the Gazebo Simulation Environment with TurtleBot3. Various offline RL algorithms, including Mildly Conservative Q-Learning (MCQ), Behavior Cloning (BC), Advantage-Weighted Regression (AWR), Batch-Constrained Q-Learning (BCQL), and Conservative Q-Learning (CQL), were implemented and compared. The results demonstrated that MCQ and CQL were ineffective at generating successful navigation policies, achieving ~0% success rates. In contrast, BC achieved a success rate of 94% after hyperparameter optimization, while AWR reached 88%. BCQL demonstrated potential with a 52% success rate, and further tuning is expected to improve its performance. Additionally, the Twin Delayed Deep Deterministic Policy Gradient with Behavior Cloning (TD3+BC) algorithm was evaluated in the PointMaze environment, highlighting significant reward degradation in the presence of out-of-distribution (OOD) actions. These findings underscore the challenges of offline RL in navigation tasks and the importance of developing robust algorithms and comprehensive hyperparameter tuning. Future work will focus on validating policies in real-world simulations with TurtleBot3 in Gazebo and addressing the impact of OOD scenarios.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <div class="tm-box-6">
-                            <h3><b>Learning Reward Machines From Optimal Policies</b></h3>
-                            <h4 id="MohamadShehab">Mohamad Louai Shehab, Robotics Department, University of Michigan</h4>
-                            <p>
-                                Reward machines, a special type of Finite State Machines (FSMs), provide compact and structured reward representations for long-horizon complicated sequential tasks in reinforcement learning. Traditional methods of learning reward machines rely on the observations of input-output traces, where the reward function is known. However, in many practical real-world scenarios, access to the reward function is often infeasible, while optimal policies are available. To that end, our work pioneers a fundamentally different and challenging approach: learning reward machines from optimal policies directly. Our methodology leverages the intricate structure of the optimal policy for constraining the set of reward machines consistent with the observed behavior. We achieve this by encoding the structural knowledge as constraints in a satisfiability (SAT) problem over the space of finite labeled graphs. Experimental results demonstrate the capability of our method to recover reward machines that are both compact and interpretable, in scenarios involving room navigation and block world stacking.
-                            </p>  
-                        </div>
-                        <br>
-
-                        <!-- <div class="tm-box-6">
-                            <h3><b></b></h3>
-                            <h4 id=""></h4>
-                            <p>
-
-                            </p>  
-                        </div>
-                        <br> -->
-
-
-
-                        
-                     
-                    </div>
-                </div>
         </section>
 
         <footer class="mt-5">
-            <p class="text-center">ICON SRC 2025 - Website Design:
+            <p class="text-center">ICON SRC 2026 - Website Design:
                 <a rel="nofollow" href="http://www.tooplate.com/view/2103-central" target="_parent" class="tm-text-black">Central</a>
             </p>
         </footer>
@@ -320,95 +63,14 @@
     <!-- load JS files -->
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
     <script src="js/popper.min.js"></script>
-    <!-- https://popper.js.org/ -->
     <script src="js/bootstrap.min.js"></script>
-    <!-- https://getbootstrap.com/ -->
     <script type="text/javascript" src="slick/slick.min.js"></script>
-    <!-- Slick Carousel -->
 
     <script>
-        function setCarousel() {
-            var slider = $('.tm-img-slider');
-
-            if (slider.hasClass('slick-initialized')) {
-                slider.slick('destroy');
-            }
-
-            if ($(window).width() > 991) {
-                // Slick carousel
-                slider.slick({
-                    autoplay: true,
-                    fade: true,
-                    speed: 800,
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                });
-            } else {
-                slider.slick({
-                    autoplay: true,
-                    fade: true,
-                    speed: 800,
-                    infinite: true,
-                    slidesToShow: 1,
-                    slidesToScroll: 1
-                });
-            }
-        }
-
         $(document).ready(function () {
             if (renderPage) {
                 $('body').addClass('loaded');
             }
-
-            setCarousel();
-
-            $(window).resize(function () {
-                setCarousel();
-            });
-
-            // Close menu after link click
-            $('.nav-link').click(function () {
-                $('#mainNav').removeClass('show');
-            });
-
-            // https://css-tricks.com/snippets/jquery/smooth-scrolling/
-            // Select all links with hashes
-            $('a[href*="#"]')
-                // Remove links that don't actually link to anything
-                .not('[href="#"]')
-                .not('[href="#0"]')
-                .click(function (event) {
-                    // On-page links
-                    if (
-                        location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '')
-                        &&
-                        location.hostname == this.hostname
-                    ) {
-                        // Figure out element to scroll to
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        // Does a scroll target exist?
-                        if (target.length) {
-                            // Only prevent default if animation is actually gonna happen
-                            event.preventDefault();
-                            $('html, body').animate({
-                                scrollTop: target.offset().top + 1
-                            }, 1000, function () {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                };
-                            });
-                        }
-                    }
-                });
         });
     </script>
 
