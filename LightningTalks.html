@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lightning Talks - ICON Student Research Conference</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
+    <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <link rel="stylesheet" href="css/tooplate-style.css">
+
+    <script>
+        var renderPage = true;
+
+        if (navigator.userAgent.indexOf('MSIE') !== -1
+            || navigator.appVersion.indexOf('Trident/') > 0) {
+            /* Microsoft Internet Explorer detected in. */
+            alert("Please view this in a modern browser such as Chrome or Microsoft Edge.");
+            renderPage = false;
+        }
+    </script>
+    <style>
+        table {
+            font-family: 'Open Sans', sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        th {
+            border: 1px solid #dddddd;
+            background-color: #2b2b2b;
+            color: #d6d6d6;
+            text-align: left;
+            padding: 12px;
+            font-size: 1.1rem;
+        }
+
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .abstract-summary {
+            list-style: none;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .abstract-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .abstract-preview {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .abstract-full {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .more-link {
+            color: #3498db;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        details[open] .abstract-preview,
+        details[open] .more-link {
+            display: none;
+        }
+        
+        .tm-section-header {
+            margin-bottom: 40px;
+        }
+        
+        .event-time {
+            font-size: 1.4rem;
+            color: #c8a24a;
+            font-weight: 700;
+            margin-top: -10px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Loader -->
+    <div id="loader-wrapper">
+        <div id="loader"></div>
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+    <div class="container">
+        <div class="topnav">
+            <a href="./">Home</a>
+            <a href="./#Registration">Registrations</a>
+            <a href="./#Schedule">Schedule</a>
+            <a href="./#Keynotes">Keynote Speakers</a>
+            <a class="active" href="./#Information">Events</a>
+            <a href="./#CorporatePartnership">Corporate Partnership</a>
+            <a href="Contact.html">Contact</a>
+        </div>
+
+        <section class="tm-section-2 tm-section-mb" id="LightningTalks">
+                <div class="row">
+                <div class="col-xl-12 col-lg-12 col-md-12">
+                    <br><br>
+                    <header class="tm-section-header text-center">
+                        <h1 class="tm-text-gray">Lightning Talks</h1>
+                        <p class="event-time">Jan 30th 2026 1:00 - 2:00 PM EST</p>
+                        <p>A series of rapid-fire presentations showcasing innovative research and insights.</p>
+                    </header>
+
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 20%;">Speaker</th>
+                                    <th style="width: 30%;">Title</th>
+                                    <th style="width: 50%;">Abstract</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Pratyush Uppuluri</td>
+                                    <td>Multi-Agent Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    —This work presents a consensus-based Bayesian framework to detect malicious user behavior in enterprise directory access graphs. By modeling directories as topics and users as agents within a multi-level interaction graph, we simulate access evolution using influence-weighted opinion dynamics. Logical dependencies between users are encoded in dynamic matrices Ci, and directory similarity is captured via a shared influence matrix W . Malicious behavior is injected as cross-component logical perturbations that violate structural norms of strongly connected components (SCCs). We apply theoretical guarantees from opinion dynamics literature to determine topic convergence and detect anomaly via scaled opinion variance. To quantify uncertainty, we introduce a Bayesian anomaly scoring mechanism that evolves over time, using both static and online priors. Simulations over synthetic access graphs validate our method, demonstrating its sensitivity to logical inconsistencies and robustness under dynamic perturbation.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                —This work presents a consensus-based Bayesian framework to detect malicious user behavior in enterprise directory access graphs. By modeling directories as topics and users as agents within a multi-level interaction graph, we simulate access evolution using influence-weighted opinion dynamics. Logical dependencies between users are encoded in dynamic matrices Ci, and directory similarity is captured via a shared influence matrix W . Malicious behavior is injected as cross-component logical perturbations that violate structural norms of strongly connected components (SCCs). We apply theoretical guarantees from opinion dynamics literature to determine topic convergence and detect anomaly via scaled opinion variance. To quantify uncertainty, we introduce a Bayesian anomaly scoring mechanism that evolves over time, using both static and online priors. Simulations over synthetic access graphs validate our method, demonstrating its sensitivity to logical inconsistencies and robustness under dynamic perturbation.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Mohamad Louai Shehab</td>
+                                    <td>Learning Reward Machines from Partially Observed Policies</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Inverse reinforcement learning is the problem of inferring a reward function from an optimal policy or demonstrations by an expert. In this work, it is assumed that the reward is expressed as a reward machine whose transitions depend on atomic propositions associated with the state of a Markov Decision Process (MDP). Our goal is to identify the true reward machine using finite information. To this end, we first introduce the notion of a prefix tree policy which associates a distribution of actions to each state of the MDP and each attainable finite sequence of atomic propositions. Then, we characterize an equivalence class of reward machines that can be identified given the prefix tree policy. Finally, we propose a SAT-based algorithm that uses information extracted from the prefix tree policy to solve for a reward machine. It is proved that if the prefix tree policy is known up to a sufficient (but finite) depth, our algorithm recovers the exact reward machine up to the equivalence class. This sufficient depth is derived as a function of the number of MDP states and (an upper bound on) the number of states of the reward machine. These results are further extended to the case where we only have access to demonstrations from an optimal policy. Several examples, including discrete grid and block worlds, a continuous state-space robotic arm, and real data from experiments with mice, are used to demonstrate the effectiveness and generality of the approach.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Inverse reinforcement learning is the problem of inferring a reward function from an optimal policy or demonstrations by an expert. In this work, it is assumed that the reward is expressed as a reward machine whose transitions depend on atomic propositions associated with the state of a Markov Decision Process (MDP). Our goal is to identify the true reward machine using finite information. To this end, we first introduce the notion of a prefix tree policy which associates a distribution of actions to each state of the MDP and each attainable finite sequence of atomic propositions. Then, we characterize an equivalence class of reward machines that can be identified given the prefix tree policy. Finally, we propose a SAT-based algorithm that uses information extracted from the prefix tree policy to solve for a reward machine. It is proved that if the prefix tree policy is known up to a sufficient (but finite) depth, our algorithm recovers the exact reward machine up to the equivalence class. This sufficient depth is derived as a function of the number of MDP states and (an upper bound on) the number of states of the reward machine. These results are further extended to the case where we only have access to demonstrations from an optimal policy. Several examples, including discrete grid and block worlds, a continuous state-space robotic arm, and real data from experiments with mice, are used to demonstrate the effectiveness and generality of the approach.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Oliver Shindell</td>
+                                    <td>Robotic and Autonomous Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    This paper presents a novel system for flexible automated fabrication of microrobots with embedded permanent magnets, and for the loading of liquid therapeutic drugs and sealing with thermally sensitive wax. Microrobots featuring embedded magnets are more controllable and observable, and are capable of tasks requiring higher forces. In this system, a micromanipulator controls tweezers, and stepper motors actuate a four-stage system that executes different assembly steps. A syringe pump is used to fill drug delivery microrobots, and a wax seal is applied with a brush made from heated copper wires. This brush is capable of efficiently applying an even wax coating to drug delivery robots, sealing the contained therapeutics inside. Vision-based feedback from an overhead microscope camera ensures precise embedded magnet assembly through a combination of image processing algorithms. A single robot takes approximately 192 seconds to assemble, plus 119 seconds for additional embedded magnets beyond the first, corresponding to 45.7% and 51.8% of the time required by a trained human. Drug loading and sealing takes around 165 seconds, 36.7% of the manual operation time, and offers a significant improvement to seal consistency and control of the thickness and area of application. This work advances micro-assembly toward practical medical use by establishing a practical basis for mass production.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                This paper presents a novel system for flexible automated fabrication of microrobots with embedded permanent magnets, and for the loading of liquid therapeutic drugs and sealing with thermally sensitive wax. Microrobots featuring embedded magnets are more controllable and observable, and are capable of tasks requiring higher forces. In this system, a micromanipulator controls tweezers, and stepper motors actuate a four-stage system that executes different assembly steps. A syringe pump is used to fill drug delivery microrobots, and a wax seal is applied with a brush made from heated copper wires. This brush is capable of efficiently applying an even wax coating to drug delivery robots, sealing the contained therapeutics inside. Vision-based feedback from an overhead microscope camera ensures precise embedded magnet assembly through a combination of image processing algorithms. A single robot takes approximately 192 seconds to assemble, plus 119 seconds for additional embedded magnets beyond the first, corresponding to 45.7% and 51.8% of the time required by a trained human. Drug loading and sealing takes around 165 seconds, 36.7% of the manual operation time, and offers a significant improvement to seal consistency and control of the thickness and area of application. This work advances micro-assembly toward practical medical use by establishing a practical basis for mass production.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Maheed Ahmed</td>
+                                    <td>Online Laplacian-Based Representation Learning in Reinforcement Learning</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Representation learning plays a crucial role in reinforcement learning, especially in complex environments with high-dimensional and unstructured states. Effective representations can enhance the efficiency of learning algorithms by improving sample efficiency and generalization across tasks. This paper considers the Laplacian-based framework for representation learning, where the eigenvectors of the Laplacian matrix of the underlying transition graph are leveraged to encode meaningful features from raw sensory observations of the states. Despite the promising algorithmic advances in this framework, it remains an open question whether the Laplacian-based representations can be learned online and with theoretical guarantees along with policy learning. We address this by formulating an online optimization approach using the Asymmetric Graph Drawing Objective (AGDO) and analyzing its convergence via online projected gradient descent under mild assumptions. Our extensive simulation studies empirically validate the convergence guarantees to the true Laplacian representation. Furthermore, we provide insights into the compatibility of different reinforcement learning algorithms with online representation learning.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Representation learning plays a crucial role in reinforcement learning, especially in complex environments with high-dimensional and unstructured states. Effective representations can enhance the efficiency of learning algorithms by improving sample efficiency and generalization across tasks. This paper considers the Laplacian-based framework for representation learning, where the eigenvectors of the Laplacian matrix of the underlying transition graph are leveraged to encode meaningful features from raw sensory observations of the states. Despite the promising algorithmic advances in this framework, it remains an open question whether the Laplacian-based representations can be learned online and with theoretical guarantees along with policy learning. We address this by formulating an online optimization approach using the Asymmetric Graph Drawing Objective (AGDO) and analyzing its convergence via online projected gradient descent under mild assumptions. Our extensive simulation studies empirically validate the convergence guarantees to the true Laplacian representation. Furthermore, we provide insights into the compatibility of different reinforcement learning algorithms with online representation learning.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Hainan Wang</td>
+                                    <td>Gaussian Process Surrogates for Robust and Stochastic Optimization in Chemical Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Gaussian Process (GP) regression provides a flexible, nonparametric framework for surrogate modeling that naturally quantifies model-form and prediction uncertainty. As summarized in Rasmussen’s foundational tutorial on GP models [1], GPs enable smooth interpolation, closed-form uncertainty estimates, and analytical gradient properties that make them well-suited for optimization under uncertainty. Inspired by the Bayesian calibration philosophy of Kennedy and O’Hagan [2] and more recent developments on Bayesian hybrid modeling for optimization under epistemic uncertainty [3,4,5], this work develops a unified study of embedding GP surrogates into deterministic, robust, and stochastic optimization formulations within Pyomo. Benchmark chemical-process case studies demonstrate that GP surrogates retain predictive accuracy while enabling efficient uncertainty propagation. Deterministic embeddings provide rapid solutions but may underestimate risk. Robust and stochastic formulations substantially improve reliability. Unlike classical hybrid models, where GPs correct mechanistic-model discrepancy [3], the present framework treats the GP as an independent predictive layer integrated directly with Pyomo’s nonlinear and stochastic programming interfaces. This enables model modularity, solver compatibility (IPOPT/Gurobi), and seamless switching between data-driven and physics-informed components. Overall, the study provides a unified and practical pathway for incorporating GP surrogates into decision-making workflows in chemical systems. The framework supports applications in process design, digital twins, and operations under uncertainty. Future work will extend the approach to multi-output and heteroscedastic GPs to further improve reliability in data-limited environments.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Gaussian Process (GP) regression provides a flexible, nonparametric framework for surrogate modeling that naturally quantifies model-form and prediction uncertainty. As summarized in Rasmussen’s foundational tutorial on GP models [1], GPs enable smooth interpolation, closed-form uncertainty estimates, and analytical gradient properties that make them well-suited for optimization under uncertainty. Inspired by the Bayesian calibration philosophy of Kennedy and O’Hagan [2] and more recent developments on Bayesian hybrid modeling for optimization under epistemic uncertainty [3,4,5], this work develops a unified study of embedding GP surrogates into deterministic, robust, and stochastic optimization formulations within Pyomo.<br><br>
+                                                Benchmark chemical-process case studies demonstrate that GP surrogates retain predictive accuracy while enabling efficient uncertainty propagation. Deterministic embeddings provide rapid solutions but may underestimate risk. Robust and stochastic formulations substantially improve reliability. Unlike classical hybrid models, where GPs correct mechanistic-model discrepancy [3], the present framework treats the GP as an independent predictive layer integrated directly with Pyomo’s nonlinear and stochastic programming interfaces. This enables model modularity, solver compatibility (IPOPT/Gurobi), and seamless switching between data-driven and physics-informed components.<br><br>
+                                                Overall, the study provides a unified and practical pathway for incorporating GP surrogates into decision-making workflows in chemical systems. The framework supports applications in process design, digital twins, and operations under uncertainty. Future work will extend the approach to multi-output and heteroscedastic GPs to further improve reliability in data-limited environments.<br><br>
+                                                <strong>Keywords:</strong> Gaussian Process Regression; Surrogate Modeling; Robust Optimization; Stochastic Programming; Uncertainty Quantification.<br>
+                                                <strong>Acknowledgements:</strong> This research is supported by the U.S. National Science Foundation (NSF) with grant number (NSF Award CBET-) 1941596.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Keshav Kasturi Rangan</td>
+                                    <td>Dynamic Modeling and Intrusive Uncertainty Quantification for Membrane Separation Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Membrane separation processes play an essential role in water treatment, chemical manufacturing, and the recovery of critical materials. However, the design and interpretation of these systems are often hindered by uncertainty in transport models and their associated parameters. This work develops a framework for dynamic modeling and intrusive uncertainty quantification (UQ) to characterize neutral and charged nanofiltration membranes using data from dynamic diafiltration experiments. The approach integrates physics-based modeling and sensitivity analysis within an equation-oriented computational environment. The framework will employ ParmEst and Pyomo.DoE within the Pyomo ecosystem to perform parameter estimation and experiment design. These intrusive methods directly use the model structure (e.g., derivatives via symbolic/automatic differentiation) for parameter estimation and model discrimination. A weighted sum of squared errors formulation supports robust parameter estimation across heterogeneous datasets. At the same time, Fisher Information Matrix criteria (A-, D-, E-, and ME-optimality) are proposed to guide the selection of operating conditions that maximize information content. These tools facilitate the evaluation of alternative transport models and support the quantitative comparison of multi-ion transport mechanisms. Experimentally, a dynamic diafiltration apparatus enables automated adjustment of operating conditions, allowing iterative refinement of parameters and experiment designs. This coupling reflects principles central to control and optimization: feedback-driven selection of experimental inputs, sensitivity-guided operation, and efficient allocation of experimental effort. The workflow demonstrates how integrating intrusive UQ with MBDoE strengthens the predictive use of mechanistic transport models while reducing uncertainty in parameter estimates. Overall, the framework links transport modeling with techniques from optimization and automation to support uncertainty-aware membrane characterization. The approach provides a structured basis for adaptive experimentation and contributes to systematic analysis of membrane systems relevant to water treatment, energy, and materials recovery.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Membrane separation processes play an essential role in water treatment, chemical manufacturing, and the recovery of critical materials. However, the design and interpretation of these systems are often hindered by uncertainty in transport models and their associated parameters. This work develops a framework for dynamic modeling and intrusive uncertainty quantification (UQ) to characterize neutral and charged nanofiltration membranes using data from dynamic diafiltration experiments. The approach integrates physics-based modeling and sensitivity analysis within an equation-oriented computational environment.<br><br>
+                                                The framework will employ ParmEst and Pyomo.DoE within the Pyomo ecosystem to perform parameter estimation and experiment design. These intrusive methods directly use the model structure (e.g., derivatives via symbolic/automatic differentiation) for parameter estimation and model discrimination. A weighted sum of squared errors formulation supports robust parameter estimation across heterogeneous datasets. At the same time, Fisher Information Matrix criteria (A-, D-, E-, and ME-optimality) are proposed to guide the selection of operating conditions that maximize information content. These tools facilitate the evaluation of alternative transport models and support the quantitative comparison of multi-ion transport mechanisms.<br><br>
+                                                Experimentally, a dynamic diafiltration apparatus enables automated adjustment of operating conditions, allowing iterative refinement of parameters and experiment designs. This coupling reflects principles central to control and optimization: feedback-driven selection of experimental inputs, sensitivity-guided operation, and efficient allocation of experimental effort. The workflow demonstrates how integrating intrusive UQ with MBDoE strengthens the predictive use of mechanistic transport models while reducing uncertainty in parameter estimates. Overall, the framework links transport modeling with techniques from optimization and automation to support uncertainty-aware membrane characterization. The approach provides a structured basis for adaptive experimentation and contributes to systematic analysis of membrane systems relevant to water treatment, energy, and materials recovery.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Joonwon Choi</td>
+                                    <td>Koopman Operator-based Network Modularization for Policy Reuse</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    In this project, we propose an algorithm for Koopman operator-based neural network modularization of a pre-trained network and its application to policy reuse. Task modularization for a neural network (NN) decomposes a pretrained network into subnetworks and adapts it for the target task. It has been widely studied due to its benefits in improving interpretability and performance on the target task without fine-tuning the network’s parameters. Nevertheless, most existing techniques rely on heuristics without providing a theoretical foundation for the underlying mechanism. To address this issue, we first propose a decomposition algorithm based on the Koopman operator theory to decompose a pre-trained network into several subnetworks. Considering NN as an autonomous system, we develop Padded Extended Dynamic Mode Decomposition (PEDMD) to approximate an arbitrary NN as a Koopman operator. The Koopman operator computed from PEDMD is then decomposed by applying the Koopman Mode Decomposition (KMD), where each mode represents a distinct subnetwork. Thus, the complex correlation between subnetworks can be represented as a linear operation between Koopman mode-eigenfunction pairs in the Koopman observable space. Furthermore, the original network can be easily reconstructed as a linear combination of subnetworks.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                In this project, we propose an algorithm for Koopman operator-based neural network modularization of a pre-trained network and its application to policy reuse. Task modularization for a neural network (NN) decomposes a pretrained network into subnetworks and adapts it for the target task. It has been widely studied due to its benefits in improving interpretability and performance on the target task without fine-tuning the network’s parameters. Nevertheless, most existing techniques rely on heuristics without providing a theoretical foundation for the underlying mechanism. <br><br>
+                                                To address this issue, we first propose a decomposition algorithm based on the Koopman operator theory to decompose a pre-trained network into several subnetworks. Considering NN as an autonomous system, we develop Padded Extended Dynamic Mode Decomposition (PEDMD) to approximate an arbitrary NN as a Koopman operator. The Koopman operator computed from PEDMD is then decomposed by applying the Koopman Mode Decomposition (KMD), where each mode represents a distinct subnetwork. Thus, the complex correlation between subnetworks can be represented as a linear operation between Koopman mode-eigenfunction pairs in the Koopman observable space. Furthermore, the original network can be easily reconstructed as a linear combination of subnetworks.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>Erkan Bayram</td>
+                                    <td>Control Disturbance Rejection in Neural ODEs</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    In this paper, we propose an iterative training algorithm for Neural ODEs that provides models resilient to control (parameter) disturbances. The method builds on our earlier work Tuning without Forgetting-and similarly introduces training points sequentially, and updates the parameters on new data within the space of parameters that do not decrease performance on the previously learned training points-with the key difference that, inspired by the concept of flat minima, we solve a minimax problem for a non-convex non-concave functional over an infinite-dimensional control space. We develop a projected gradient descent algorithm on the space of parameters that admits the structure of an infinite-dimensional Banach subspace. We show through simulations that this formulation enables the model to effectively learn new data points and gain robustness against control disturbance.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                In this paper, we propose an iterative training algorithm for Neural ODEs that provides models resilient to control (parameter) disturbances. The method builds on our earlier work Tuning without Forgetting-and similarly introduces training points sequentially, and updates the parameters on new data within the space of parameters that do not decrease performance on the previously learned training points-with the key difference that, inspired by the concept of flat minima, we solve a minimax problem for a non-convex non-concave functional over an infinite-dimensional control space. We develop a projected gradient descent algorithm on the space of parameters that admits the structure of an infinite-dimensional Banach subspace. We show through simulations that this formulation enables the model to effectively learn new data points and gain robustness against control disturbance.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    </div>
+                </div>
+        </section>
+
+        <footer class="mt-5">
+            <p class="text-center">ICON SRC 2026 - Website Design:
+                <a rel="nofollow" href="http://www.tooplate.com/view/2103-central" target="_parent" class="tm-text-black">Central</a>
+            </p>
+        </footer>
+    </div>
+
+    <!-- load JS files -->
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            if (renderPage) {
+                $('body').addClass('loaded');
+            }
+        });
+    </script>
+
+</body>
+
+</html>
