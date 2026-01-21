@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ICON Student Research Conference</title>
+    <title>Presentations - ICON Student Research Conference</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,6 +24,102 @@
             renderPage = false;
         }
     </script>
+    <style>
+        table {
+            font-family: 'Open Sans', sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        th {
+            border: 1px solid #dddddd;
+            background-color: #2b2b2b;
+            color: #d6d6d6;
+            text-align: left;
+            padding: 12px;
+            font-size: 1.1rem;
+        }
+
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .abstract-summary {
+            list-style: none;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .abstract-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .abstract-preview {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .abstract-full {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .more-link {
+            color: #3498db;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        details[open] .abstract-preview,
+        details[open] .more-link {
+            display: none;
+        }
+        
+        .tm-section-header {
+            margin-bottom: 40px;
+        }
+
+        .session-title {
+            background-color: #c8a24a;
+            color: #000;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+            font-weight: 700;
+            display: inline-block;
+        }
+        
+        .session-date {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .time-col {
+            font-weight: bold;
+            color: #555;
+            white-space: nowrap;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,19 +132,486 @@
     <div class="container">
         <div class="topnav">
             <a href="./">Home</a>
-            <a href="./#Registration">Registration and Abstract Submission</a>
+            <a href="./#Registration">Registrations</a>
             <a href="./#Schedule">Schedule</a>
+            <a href="./#Keynotes">Keynote Speakers</a>
             <a class="active" href="./#Information">Events</a>
             <a href="./#CorporatePartnership">Corporate Partnership</a>
-            <a href="./Contact">Contact</a>
+            <a href="Contact.html">Contact</a>
         </div>
 
         <section class="tm-section-2 tm-section-mb" id="Presentations">
                 <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 text-center">
+                <div class="col-xl-12 col-lg-12 col-md-12">
                     <br><br>
-                    <h2 class="tm-text-gray">TBA: Detailed presentation schedule will be posted soon</h2>
-                    <br><br>
+                    <header class="tm-section-header text-center">
+                        <h1 class="tm-text-gray">Student Presentations</h1>
+                        <p>Detailed schedule of student research presentations across four specialized sessions.</p>
+                    </header>
+
+                    <!-- SESSION 1 -->
+                    <div>
+                        <h3 class="session-title">SESSION 1: Controls</h3>
+                        <div class="session-date">Thursday, January 29th, 2026</div>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%;">Time</th>
+                                    <th style="width: 20%;">Speaker</th>
+                                    <th style="width: 25%;">Title</th>
+                                    <th style="width: 40%;">Abstract</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-col">10:45 - 11:00</td>
+                                    <td>Santosh Rajkumar</td>
+                                    <td>Real-Time Linear MPC for Quadrotors on SE (3): An Analytical Koopman-based Realization</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Achieving real-time optimal control for agile aerial robots remains a central challenge in modern robotics. While nonlinear model predictive control (NMPC) offers high accuracy, its computational cost often prevents reliable onboard deployment. Conversely, linear MPC (LMPC) enables real-time feasibility but at the expense of model fidelity, especially for systems with strongly nonlinear, coupled rotational–translational dynamics such as quadrotors evolving on the SE(3) manifold. This work presents KQ-LMPC, a Koopman-based Linear Model Predictive Control (LMPC) framework that is aimed at bridging this long-standing gap between computational efficiency and nonlinear accuracy.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Achieving real-time optimal control for agile aerial robots remains a central challenge in modern robotics. While nonlinear model predictive control (NMPC) offers high accuracy, its computational cost often prevents reliable onboard deployment. Conversely, linear MPC (LMPC) enables real-time feasibility but at the expense of model fidelity, especially for systems with strongly nonlinear, coupled rotational–translational dynamics such as quadrotors evolving on the SE(3) manifold. This work presents KQ-LMPC, a Koopman-based Linear Model Predictive Control (LMPC) framework that is aimed at bridging this long-standing gap between computational efficiency and nonlinear accuracy. The key idea is an analytical Linear Parameter-Varying (LPV) realization of the full quadrotor dynamics, derived from Koopman operator theory. Unlike data-driven lifting approaches, our formulation employs analytically designed Koopman observables that encode the nonlinear coupling between attitude and translational motion, yielding a lifted quai-linear model. The resulting predictive model evolves linearly in the lifted coordinates while preserving the essential nonlinear structure of SE(3) dynamics. This allows convex, constraint-aware quadratic programming (QP) formulations that are both theoretically interpretable and computationally efficient. We demonstrate solve times under 10 ms on embedded hardware (NVIDIA Jetson NX), enabling true real-time MPC execution without recourse to learning-based approximations or neural surrogates. Hardware experiments validate the framework’s efficacy in trajectory tracking tasks under reasonably agile flight conditions. The controller consistently achieves performance on par with NMPC while maintaining the stability and predictability of convex optimization. Importantly, KQ-LMPC is fully analytical, data-free, and explainable, providing a transparent alternative to neural or regression-based Koopman MPC variants. To the best of our knowledge, this represents the first experimentally validated Koopman-LMPC for quadrotors that: operates on the full SE(3) configuration space, uses closed-form Koopman observables, and achieves real-time embedded implementation without offline training or system identification. The proposed approach, integrated into an open-source repository and PyPI package, establishes a new benchmark for hardware-deployable, explainable predictive control in aerial robotics.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:00 - 11:15</td>
+                                    <td>Peter Frazier</td>
+                                    <td>General Synthesis Methods for Controls-Centric Modeling of Open-die Forging and Deformation Process Analysis</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Open-die forging is a process by which metal is incrementally shaped through repeated strikes from a tool . The process is versatile, able to achieve many material shapes while achieving desirable material properties. While software exists for generating toolpaths for incremental shaping of material, there is currently limited knowledge of how to synthesize real-time controllers for open-die forging processes which take into account the full range of geometric complexity and material property states. Incremental forming necessitates that the material undergoes plastic deformation, which is modeled by nonlinear PDEs on a 3D domain.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Open-die forging is a process by which metal is incrementally shaped through repeated strikes from a tool . The process is versatile, able to achieve many material shapes while achieving desirable material properties. While software exists for generating toolpaths for incremental shaping of material, there is currently limited knowledge of how to synthesize real-time controllers for open-die forging processes which take into account the full range of geometric complexity and material property states. Incremental forming necessitates that the material undergoes plastic deformation, which is modeled by nonlinear PDEs on a 3D domain. This is disadvantageous for producing control schemes which are often built upon linear models of the system. Developments in Koopman operator methods present a way to map the nonlinear dynamics of open-die forging to linear dynamics. The Koopman operator has been shown to portray highly nonlinear systems as linear by mapping the nonlinear state-space model to an infinite-dimensional linear model of built on a Hilbert space of measurement functions. Finite-dimensional approximations of this model seek to capture the accuracy of the full infinite-dimensional system using the sparsest collection of measurement functions . By collecting step-by-step (incremental forming operation) data pairs from the system and lifting the data to the higher-dimensional space of sparse measurements, a linear model of the system can be found from the least-squares mapping of the data. Uniaxial deformation simulations run with JAX-FEM in Python will gather data to form a simplified state-space model using Koopman techniques. Performance of the model will be benchmarked against DEFORM, the industry leading software package for forging modeling. This will demonstrate a novel method for producing an accurate, data-driven Koopman model for open-die forging and enable further analysis into the controllability of the open-die forging process and the reachability of material states.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:15 - 11:30</td>
+                                    <td>Balark Tiwari</td>
+                                    <td>Real-Time Feedback and Feedforward Temperature Control with Spatial-Horizon ILC for Volumetric Laser-Heated Digital Glass Forming</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Digital glass forming (DGF) using volumetric laser heating enables the fabrication of complex multi-layer silicate glass structures for optical and microfluidic applications. The narrow working temperature range (700–1100 °C) and exponential viscosity–temperature relationship make stable deposition highly sensitive to laser power, defocus distance, and path-dependent disturbances. This work showcases a deterministic real-time control system built on an RT-Linux platform integrating sensor fusion from: thermal camera (work-zone temperature measurement), visible camera, laser source, and precision motion stages.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Digital glass forming (DGF) using volumetric laser heating enables the fabrication of complex multi-layer silicate glass structures for optical and microfluidic applications. The narrow working temperature range (700–1100 °C) and exponential viscosity–temperature relationship make stable deposition highly sensitive to laser power, defocus distance, and path-dependent disturbances. This work showcases a deterministic real-time control system built on an RT-Linux platform integrating sensor fusion from: thermal camera (work-zone temperature measurement), visible camera, laser source, and precision motion stages. A discrete-time tracking feedback controller with internal model principle reduces temperature variation by 93.8 % (σ: 16.1 °C → 0.65 °C) compared to constant-power operation. This closed-loop regulation enables stable deposition outside the process window identified by traditional design-of-experiments, successfully producing tracks at defocus distances of 2 mm and 10 mm where open-loop trials fail due to insufficient wetting or vaporization. For multi-layer builds at higher speeds, sharp turns and layer transitions introduce repeatable impulsive disturbances that exceed the bandwidth of feedback alone. A data-driven spatial-horizon iterative learning control (ILC) compensator with spatial horizon is integrated as feedforward action. When combined with the existing feedback loop, ILC reduces root-mean-square temperature tracking error by approximately 40 % and peak-to-peak excursion from 116 °C to 52 °C within a few iterations, eliminating vaporization observed under feedback-only control. The combined controller reliably fabricates multi-layer structures, including single-track wall structures, with excellent thermal profiles. By using real-time feedback to expand the operable parameter space and spatial-horizon ILC to compensate for changing boundary conditions and unmodeled physics, the approach significantly relaxes the thermal constraints that have previously limited digital glass forming.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:30 - 11:45</td>
+                                    <td>S M Nahid Mahmud</td>
+                                    <td>Safe Output Feedback Approximate Dynamic Programming for Nonlinear Control Affine Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    In this work, we study the state-constrained optimal control problem for nonlinear control-affine systems under output feedback. While Approximate Dynamic Programming (ADP) enables online feedback via approximate Bellman solutions, most safe-ADP methods assume full-state availability, which is often unrealistic in practice. Simply replacing unmeasured states with their estimates can violate safety. We propose estimation-aware Lyapunov–Control Barrier Functions (EA-LCBFs) that modify barrier conditions using explicit bounds on estimation error, yielding an invasive safety filter around a nominal ADP policy.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                In this work, we study the state-constrained optimal control problem for nonlinear control-affine systems under output feedback. While Approximate Dynamic Programming (ADP) enables online feedback via approximate Bellman solutions, most safe-ADP methods assume full-state availability, which is often unrealistic in practice. Simply replacing unmeasured states with their estimates can violate safety. We propose estimation-aware Lyapunov–Control Barrier Functions (EA-LCBFs) that modify barrier conditions using explicit bounds on estimation error, yielding an invasive safety filter around a nominal ADP policy. The resulting online scheme preserves ADP performance, certifies forward invariance of the actual safe set, and operates only using output measurements. We demonstrate reliable constraint satisfaction without compromising the performance of ADP-based optimization on a representative nonlinear system.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:45 - 12:00</td>
+                                    <td>Wenxi Chen</td>
+                                    <td>Model-agnostic Meta-learning for Adaptive Gait Phase and Terrain Geometry Estimation with Wearable Soft Sensors</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    This letter presents a model-agnostic meta-learning (MAML) based framework for simultaneous and accurate estimation of human gait phase and terrain geometry using a small set of fabric-based wearable soft sensors, with efficient adaptation to unseen subjects and strong generalization across different subjects and terrains. Compared to rigid alternatives such as inertial measurement units, fabric-based soft sensors improve comfort but introduce nonlinearities due to hysteresis, placement error, and fabric deformation.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                This letter presents a model-agnostic meta-learning (MAML) based framework for simultaneous and accurate estimation of human gait phase and terrain geometry using a small set of fabric-based wearable soft sensors, with efficient adaptation to unseen subjects and strong generalization across different subjects and terrains. Compared to rigid alternatives such as inertial measurement units, fabric-based soft sensors improve comfort but introduce nonlinearities due to hysteresis, placement error, and fabric deformation. Moreover, inter-subject and inter-terrain variability, coupled with limited calibration data in real-world deployments, further complicate accurate estimation. To address these challenges, the proposed framework integrates MAML into a deep learning architecture to learn a generalizable model initialization that captures subject- and terrain-invariant structure. This initialization enables efficient adaptation (i.e., adaptation with only a small amount of calibration data and a few fine-tuning steps) to new users, while maintaining strong generalization (i.e., high estimation accuracy across subjects and terrains). Experiments on nine participants walking at various speeds over five terrain conditions demonstrate that the proposed framework outperforms baseline approaches in estimating gait phase, locomotion mode, and incline angle, with superior accuracy, adaptation efficiency, and generalization.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">12:00 - 12:15</td>
+                                    <td>Alba Gurpegui Ramón</td>
+                                    <td>Minimax Linear Optimal Control of Positive Systems</td>
+                                    <td>-</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- SESSION 2 -->
+                    <div>
+                        <h3 class="session-title">SESSION 2: Robotics</h3>
+                        <div class="session-date">Thursday, January 29th, 2026</div>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%;">Time</th>
+                                    <th style="width: 20%;">Speaker</th>
+                                    <th style="width: 25%;">Title</th>
+                                    <th style="width: 40%;">Abstract</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-col">13:30 - 13:45</td>
+                                    <td>Nnamdi Chikere</td>
+                                    <td>Sensitivity Analysis of Coupled Hopf Oscillator Dynamics for Controlled Flipper-Driven Robotic Locomotion</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    While sea turtle hatchlings possess flippers finely tuned for efficient aquatic propulsion, these limbs must also manage effective traversal of loose terrestrial substrates during their essential journey from nest to ocean. Hatchling's ability to generate rapid, coordinated, cyclic, and repeatable flipper-driven strokes on yielding terrain has inspired robotic systems designed to operate in similarly deformable environments. Central Pattern Generators (CPGs), modeled after the neural circuits that produce rhythmic motion in animals, provide a biologically grounded framework for coordinating these cyclic limb movements.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                While sea turtle hatchlings possess flippers finely tuned for efficient aquatic propulsion, these limbs must also manage effective traversal of loose terrestrial substrates during their essential journey from nest to ocean. Hatchling's ability to generate rapid, coordinated, cyclic, and repeatable flipper-driven strokes on yielding terrain has inspired robotic systems designed to operate in similarly deformable environments. Central Pattern Generators (CPGs), modeled after the neural circuits that produce rhythmic motion in animals, provide a biologically grounded framework for coordinating these cyclic limb movements. Identifying the CPG parameters that most strongly influence locomotor performance is essential for developing adaptive and energy-efficient gait controllers. In this study, we present a detailed parameter-sensitivity analysis of a Hopf-oscillator Central Pattern Generator (CPG) that drives a sea-turtle-inspired robot in a MuJoCo simulation environment. We performed systematic sweeps of key CPG parameters, including stance and swing frequencies, amplitude gains, and inter-oscillator coupling strength, quantifying their effects on forward speed, mechanical energy expenditure, and the cost of transport. The results demonstrate that stance frequency is the dominant determinant of forward propulsion, with speed rapidly increasing up to approximately 1.0-1.1Hz before saturating. Amplitude analysis showed that foreflipper amplitude is crucial, producing over a twofold speed increase, while hindflipper and hip amplitudes primarily influence stability and energy consumption. Furthermore, the coupling strength was found to strongly modulate the quality of flipper coordination. Overall, these findings identify the key CPG parameters governing robust flipper-based locomotion on yielding terrain, providing critical insight for future optimization and adaptive control strategies in bio-inspired robotics.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">13:45 - 14:00</td>
+                                    <td>Muqun Hu</td>
+                                    <td>Towards Versatile Humanoid Table Tennis: Unified RL with Prediction Augmentation</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Humanoid table tennis (TT) demands rapid perception, proactive whole-body motion, and agile footwork under strict timing -- capabilities that remain difficult for unified controllers. We propose a reinforcement learning framework that maps ball-position observations directly to whole-body joint commands for both arm striking and leg locomotion, strengthened by predictive signals and dense, physics-guided rewards. A lightweight learned predictor, fed with recent ball positions, estimates future ball states and augments the policy's observations for proactive decision-making.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Humanoid table tennis (TT) demands rapid perception, proactive whole-body motion, and agile footwork under strict timing -- capabilities that remain difficult for unified controllers. We propose a reinforcement learning framework that maps ball-position observations directly to whole-body joint commands for both arm striking and leg locomotion, strengthened by predictive signals and dense, physics-guided rewards. A lightweight learned predictor, fed with recent ball positions, estimates future ball states and augments the policy's observations for proactive decision-making. During training, a physics-based predictor supplies precise future states to construct dense, informative rewards that lead to effective exploration. The resulting policy attains strong performance across varied serve ranges (hit rate ≥ 96% and success rate ≥ 92%) in simulations. Ablation studies confirm that both the learned predictor and the predictive reward design are critical for end-to-end learning. Deployed zero-shot on a physical Booster T1 humanoid with 23 revolute joints, the policy produces coordinated lateral and forward-backward footwork with accurate, fast returns, suggesting a practical path toward versatile, competitive humanoid TT.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">14:00 - 14:15</td>
+                                    <td>Zhixian Hu</td>
+                                    <td>Vibrissae-Inspired Vision-Based Magnetic-Actuated Whisker</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Tactile perception is significant for robotic operation in unstructured environments. Whisker-based sensors offer lightweight bio-inspired solutions, yet most rely on single-whisker sensing and are limited by passive interaction and constrained functionality. Here we present a circular array of eight independently actuated whiskers, each driven by a pulse-switchable permanent magnet and tracked by a camera. This design enables simultaneous multi-point sensing and coordinated actuation, supporting diverse functions.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Tactile perception is significant for robotic operation in unstructured environments. Whisker-based sensors offer lightweight bio-inspired solutions, yet most rely on single-whisker sensing and are limited by passive interaction and constrained functionality. Here we present a circular array of eight independently actuated whiskers, each driven by a pulse-switchable permanent magnet and tracked by a camera. This design enables simultaneous multi-point sensing and coordinated actuation, supporting diverse functions. Quantitative analyses demonstrate accurate pixel-to-physical mapping, consistent pixel-to-force characterization, and long-term repeatability. In this work, we show that an vibrissae-inspired vision-based magnetic-actuated whisker array integrating distributed perception with active interaction achieves reliable physical mapping, repeatable sensing, and delicate grasping, thereby advancing tactile sensing and laying the foundation for contact-driven exploration, soft manipulation, and adaptive behavior in dynamic environments.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">14:15 - 14:30</td>
+                                    <td>I-Chia Chang</td>
+                                    <td>Adaptive Control for Humanoid Locomotion under Hybrid Dynamics on Multi-directional Moving Platforms</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Achieving stable humanoid walking on moving platforms with unknown motion remains a challenging control problem due to the hybrid dynamics involving time-varying unknown disturbance. Adaptive control is a widely used method for rejecting such disturbances, yet existing adaptive controllers are typically designed for continuous-time system and do not directly applicable for hybrid systems. This work develops an adaptive controller capable of rejecting multiple sinusoidal disturbances with unknown frequencies, amplitudes, and phases for a linear hybrid system.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Achieving stable humanoid walking on moving platforms with unknown motion remains a challenging control problem due to the hybrid dynamics involving time-varying unknown disturbance. Adaptive control is a widely used method for rejecting such disturbances, yet existing adaptive controllers are typically designed for continuous-time system and do not directly applicable for hybrid systems. This work develops an adaptive controller capable of rejecting multiple sinusoidal disturbances with unknown frequencies, amplitudes, and phases for a linear hybrid system. First, we show that this disturbance rejection problem is solvable given the solution to the hybrid regulator equation exists. Second, we propose an output feedback controller structure and prove that at least one set of controller parameters achieves exact disturbance rejection. Third, using hybrid swapping lemma, we construct a parameter estimation law to adjust the controller parameters using a least-square-type adaptive law. Finally, we treat the humanoid walking on moving surfaces as a case study to validate the usefulness of the proposed method. Both simulation and experiments confirm the performance improvement through an ablation study.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">14:30 - 14:45</td>
+                                    <td>Shengqing Xia</td>
+                                    <td>Robotic and Autonomous Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Autonomous drone delivery to door relies on a popular computer vision technique called semantic segmentation (SS) to recognize meaningful house segments and determine a precise drop-off point near the door. While this SS-based approach is effective under specific environments, it fails to perform well across other common environmental factors such as different seasons, hours of the day, weather and illumination levels. In this work, we propose Robust Structural Semantic Segmentation (RSSS), a novel patch to the existing SS solution without requiring re-training for new environments.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Autonomous drone delivery to door relies on a popular computer vision technique called semantic segmentation (SS) to recognize meaningful house segments and determine a precise drop-off point near the door. While this SS-based approach is effective under specific environments, it fails to perform well across other common environmental factors such as different seasons, hours of the day, weather and illumination levels. In this work, we propose Robust Structural Semantic Segmentation (RSSS), a novel patch to the existing SS solution without requiring re-training for new environments. The core idea is to “Let Strong Help Weak”, where the results of semantic segmentation obtained under favorable/strong conditions are utilized to enhance the weaker ones in adverse settings. This improvement is achieved by leveraging house structures and spatial layouts, which remain largely invariant across various environments. Our evaluation shows that RSSS outperforms the state-of-the-art methods and significantly enhances the robustness of SS and drone delivery across various environments.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">14:45 - 15:00</td>
+                                    <td>Shijun Zhou</td>
+                                    <td>Energy-efficient Intermittent Gliding Flight Control of a Bird-scale Flapping Wing Vehicle using Dynamic Soaring</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    In this conference, we would like to demonstrate a bio-inspired flight controller and robotic platform that enables bird-scale flapping wing vehicles to have longer, and more efficient flights. In nature, we often see seagulls and albatrosses gliding (without flapping) effortlessly in gusts of wind near the seashore. Birds such as albatrosses are able to fly tirelessly for days without needing to rest. The secret lies in the unique flight pattern called “Dynamic Soaring”. By utilizing the wind shear layers above the ocean surface and their aerodynamic body structure, seagulls and albatrosses are able to easily gain altitude without expending energy (through active flapping).
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                In this conference, we would like to demonstrate a bio-inspired flight controller and robotic platform that enables bird-scale flapping wing vehicles to have longer, and more efficient flights. In nature, we often see seagulls and albatrosses gliding (without flapping) effortlessly in gusts of wind near the seashore. Birds such as albatrosses are able to fly tirelessly for days without needing to rest. The secret lies in the unique flight pattern called “Dynamic Soaring”. By utilizing the wind shear layers above the ocean surface and their aerodynamic body structure, seagulls and albatrosses are able to easily gain altitude without expending energy (through active flapping). Unconventionally, by treating the wind gusts as means to lower their total energy output instead of treating them as disturbance, albatrosses can perform energy efficient endurance flights. Inspired by dynamic soaring and its unique application in increasing flight efficiency, we will propose a new bio-inspired flapping wing vehicle platform with a flight control scheme in this conference and provide live demonstrations of this new experimental platform.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- SESSION 3 -->
+                    <div>
+                        <h3 class="session-title">SESSION 3: Optimization</h3>
+                        <div class="session-date">Thursday, January 29th, 2026</div>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%;">Time</th>
+                                    <th style="width: 20%;">Speaker</th>
+                                    <th style="width: 25%;">Title</th>
+                                    <th style="width: 40%;">Abstract</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-col">15:15 - 15:30</td>
+                                    <td>Xinlong Du</td>
+                                    <td>Variational Generative Modeling of Stochastic Point Processes</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    We consider approximate inference for a class of Cox point processes i.e., point processes with stochastic intensities. Specifically, we consider processes where the Poisson intensity function is modeled as the solution of a stochastic differential equation (SDE). We propose a VAE-like approach where the latent variable is the solution to an SDE, the decoder is fixed (mapping the intensity function to a realization of an inhomogeneous Poisson process), and the encoder maps a point process realization to a posterior path measure corresponding to a diffusion process.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                We consider approximate inference for a class of Cox point processes i.e., point processes with stochastic intensities. Specifically, we consider processes where the Poisson intensity function is modeled as the solution of a stochastic differential equation (SDE). We propose a VAE-like approach where the latent variable is the solution to an SDE, the decoder is fixed (mapping the intensity function to a realization of an inhomogeneous Poisson process), and the encoder maps a point process realization to a posterior path measure corresponding to a diffusion process. Using tools from the theory of {\it enlargement of filtrations}, we show that the posterior path measure lies in a variational family of SDE path measures. Consequently, evidence lower bound (ELBO) maximization coincides with likelihood maximization. We also introduce hybrid encoder architectures for modeling the drift function of the posterior SDE, conditioned on varying length point process sample paths. Experiments on synthetic data showcase the ability to recover the ground truth measure and highlight the potential of this framework for modeling over-dispersed point processes.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">15:30 - 15:45</td>
+                                    <td>Luis Marques</td>
+                                    <td>Lies We Can Trust: Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Nonholonomic Lie Groups</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    We propose Conformal Lie-Group Action Prediction Sets (CLAPS), a symmetry-aware conformal prediction-based algorithm that constructs, for a given action, a set guaranteed to contain the resulting system configuration at a user-defined probability. Our assurance holds under both aleatoric and epistemic uncertainty, non-asymptotically, and does not require strong assumptions about the true system dynamics, the uncertainty sources, or the quality of the approximate dynamics model. Typically, uncertainty quantification is tackled by making strong assumptions about the error distribution or magnitude, or by relying on uncalibrated uncertainty estimates — i.e., with no link to frequentist probabilities — which are insufficient for safe control.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                We propose Conformal Lie-Group Action Prediction Sets (CLAPS), a symmetry-aware conformal prediction-based algorithm that constructs, for a given action, a set guaranteed to contain the resulting system configuration at a user-defined probability. Our assurance holds under both aleatoric and epistemic uncertainty, non-asymptotically, and does not require strong assumptions about the true system dynamics, the uncertainty sources, or the quality of the approximate dynamics model. Typically, uncertainty quantification is tackled by making strong assumptions about the error distribution or magnitude, or by relying on uncalibrated uncertainty estimates — i.e., with no link to frequentist probabilities — which are insufficient for safe control. Recently, conformal prediction has emerged as a statistical framework capable of providing distribution-free probabilistic guarantees on test-time prediction accuracy. While current conformal methods treat robots as Euclidean points, many systems have non-Euclidean configurations, e.g., some mobile robots have SE(2). In this work, we rigorously analyze configuration errors using Lie groups, extending previous Euclidean Space theoretical guarantees to SE(2). Our experiments on a simulated JetBot, and on a real MBot, suggest that by considering the configuration space’s structure, our symmetry-informed nonconformity score leads to more volume-efficient prediction regions which represent the underlying uncertainty better than existing approaches.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">15:45 - 16:00</td>
+                                    <td>Vivek Saini</td>
+                                    <td>Data-Driven Surrogate Modeling and Bayesian Optimization for High-Dimensional Plasma Kinetic Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Low-temperature plasma processes are increasingly employed in chemical synthesis, energy conversion, and environmental applications. Despite their promise, developing predictive models for plasma-assisted reaction systems remains challenging due to complex reaction networks, nonlinear plasma-chemistry couplings, and the high computational cost associated with detailed kinetic simulations. Traditional design strategies, such as one-factor-at-a-time studies or classical design-of-experiments (DOE) approaches, are inefficient and often neglect model uncertainty, limiting the ability to optimize reactor performance and understand system behavior.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Low-temperature plasma processes are increasingly employed in chemical synthesis, energy conversion, and environmental applications. Despite their promise, developing predictive models for plasma-assisted reaction systems remains challenging due to complex reaction networks, nonlinear plasma-chemistry couplings, and the high computational cost associated with detailed kinetic simulations. Traditional design strategies, such as one-factor-at-a-time studies or classical design-of-experiments (DOE) approaches, are inefficient and often neglect model uncertainty, limiting the ability to optimize reactor performance and understand system behavior. To address these challenges, this work develops an uncertainty-aware, data-driven framework that integrates Gaussian Process (GP) regression with Bayesian Optimization (BO) to systematically explore and model plasma kinetic reaction conditions. The approach combines a physics-based plasma kinetics simulator with probabilistic surrogate modeling to reduce computational cost while preserving mechanistic fidelity. The high-fidelity ZDPlasKin kinetic model is used to simulate plasma-driven ethane dehydrogenation. Representative initial datasets are generated using Latin Hypercube Sampling of a multidimensional reactor parameter space, including reduced electric field, electron density, pressure, temperature, residence time, feed composition, and pulsed generator metrics. These simulation data are used to train GP surrogate models that approximate nonlinear input–output relationships such as ethylene yield, selectivity, and energy efficiency while simultaneously providing predictive uncertainty estimates. Multiple kernel families (RBF, Matérn, Rational Quadratic) and hyperparameter learning strategies are evaluated to quantify their impact on model accuracy and uncertainty calibration. The flexibility of GP surrogates allows them to capture the stiff, highly nonlinear behavior characteristic of plasma reaction systems without requiring excessively large training sets. The GP posterior uncertainty is then used to guide Bayesian Optimization, employing acquisition functions such as Expected Improvement, Upper Confidence Bound, and Probability of Improvement to balance exploration of uncertain regions and exploitation of promising operating conditions. Each BO-recommended simulation point is evaluated with ZDPlasKin and used to update the GP model, creating a closed-loop refinement process. This iterative workflow concentrates simulations in the most informative regions of the design space and significantly reduces the number of full-scale kinetic simulations required to identify near-optimal reactor conditions. Results for maximizing ethane-to-ethylene conversion demonstrate that the GP–BO framework accurately captures key plasma kinetic trends while reducing simulation demand by more than two-thirds compared to conventional DOE and random sampling approaches. Overall, the study shows that integrating surrogate modeling, predictive uncertainty quantification, and adaptive sampling provides a practical and computationally efficient strategy for exploring high-dimensional plasma reactor conditions. The methodology offers a generalizable framework for data-efficient mechanism exploration and model-guided optimization in plasma-assisted catalysis and other complex reacting systems where direct simulation is expensive.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">16:00 - 16:15</td>
+                                    <td>Abbas Shaikh</td>
+                                    <td>Uncertainty-Aware Social Navigation Through Variational Gaussian Process Planning</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Robot navigation in crowded environments among humans is a challenging endeavor due to its highly dynamic nature and stringent safety requirements. While existing social navigation planners typically introduce probabilistic constraints with respect to each human to provide safety guarantees, they often fail to fully exploit the collision-free space available to the robot. In this work, we explore the available collision-free space given human motion predictions and explicitly incorporate prediction uncertainty within our motion planner. To this end, we formulate motion planning as a probabilistic-inference-based optimization problem.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Robot navigation in crowded environments among humans is a challenging endeavor due to its highly dynamic nature and stringent safety requirements. While existing social navigation planners typically introduce probabilistic constraints with respect to each human to provide safety guarantees, they often fail to fully exploit the collision-free space available to the robot. In this work, we explore the available collision-free space given human motion predictions and explicitly incorporate prediction uncertainty within our motion planner. To this end, we formulate motion planning as a probabilistic-inference-based optimization problem. Specifically, we perform variational inference over Gaussian Processes to generate uncertainty-aware motion plans that balance safety and efficiency. We interleave natural gradient updates with stochastic optimization to maximize the evidence lower bound, enabling efficient inference. By exploiting the sparsity inherent to dynamic models that follow the Markovian property, we achieve real-time performance and execute the generated motion plans in a receding horizon manner. Experimental results demonstrate that our approach generates smoother, more efficient trajectories while maintaining safety in dynamic human environments.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- SESSION 4 -->
+                    <div>
+                        <h3 class="session-title">SESSION 4: Learning</h3>
+                        <div class="session-date">Friday, January 30th, 2026</div>
+                    </div>
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 15%;">Time</th>
+                                    <th style="width: 20%;">Speaker</th>
+                                    <th style="width: 25%;">Title</th>
+                                    <th style="width: 40%;">Abstract</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="time-col">10:30 - 10:45</td>
+                                    <td>Yuezhu Xu</td>
+                                    <td>Efficient Compositional Lipschitz Estimates for Deep Neural Networks</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Certifying the robustness of neural networks is crucial in safety-critical learning systems. A common approach involves bounding the network’s Lipschitz constant, which quantifies the worst case sensitivity to input perturbations. However, computing the exact Lipschitz constant is NP-hard, and existing estimation methods, often based on large semidefinite programs (SDPs), scale poorly with network size. This talk presents a suite of efficient and compositional algorithms for estimating Lipschitz constants in deep feedforward neural networks.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Certifying the robustness of neural networks is crucial in safety-critical learning systems. A common approach involves bounding the network’s Lipschitz constant, which quantifies the worst case sensitivity to input perturbations. However, computing the exact Lipschitz constant is NP-hard, and existing estimation methods, often based on large semidefinite programs (SDPs), scale poorly with network size. This talk presents a suite of efficient and compositional algorithms for estimating Lipschitz constants in deep feedforward neural networks. We introduce a novel decomposition framework that reformulates the SDP-based verification problem into a sequence of small, layer wise subproblems. This compositional approach enables two estimation modes: one that solves small SDPs at each stage to provide accurate bounds, and another further relaxes the subproblems to yield closed form estimates, enabling near instantaneous estimation. We first develop ECLipsE, which operates under the assumption that activation functions have a slope lower bound of zero, and provides global Lipschitz estimates through this efficient decomposition. Building on this foundation, we introduce ECLipsE-Gen-Local, a generalized framework that supports heterogeneous activation slope bounds, arbitrary input-output node pairs, and custom subnetwork configurations. It further incorporates local input information and propagates it along with the subproblem solutions to yield local Lipschitz estimates that accurately capture local features, making it especially useful in control and online learning settings. Both algorithms come with theoretical guarantees on the feasibility and validity of Lipschitz bounds. Experimental results show that these methods outperform existing techniques across various benchmarks, offering substantial reductions in computation time (by several orders of magnitude, while maintaining or improving the tightness of the estimated bounds. In particular, the local estimation variants accurately capture region-specific features of the network's behavior, making the approach especially suited for scalable, certifiable deep learning applications where efficiency and robustness are essential.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">10:45 - 11:00</td>
+                                    <td>Zirui Xu</td>
+                                    <td>Scalable and Reliable Coordination in Embodied Intelligent Networks: A Submodular Optimization and Online Learning Approach</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Embodied intelligent networks are collections of distributed autonomous agents that can sense, reason, communicate, and act. Scalable and reliable coordination among such agents can benefit society in tasks ranging from environmental monitoring to transportation to surveillance. But achieving scalability is challenging due to the agents’ limited resources vs. their resource-demanding tasks, often combinatorial and NP-hard. Achieving reliability is challenging due to environmental unpredictability, limited environmental observability, and untrustworthiness of commands externally suggested by human operators or machine learning algorithms.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Embodied intelligent networks are collections of distributed autonomous agents that can sense, reason, communicate, and act. Scalable and reliable coordination among such agents can benefit society in tasks ranging from environmental monitoring to transportation to surveillance. But achieving scalability is challenging due to the agents’ limited resources vs. their resource-demanding tasks, often combinatorial and NP-hard. Achieving reliability is challenging due to environmental unpredictability, limited environmental observability, and untrustworthiness of commands externally suggested by human operators or machine learning algorithms. This thesis lays the theoretical and algorithmic foundation to overcome these challenges by introducing discrete optimization and online learning capabilities that enable multi-agent networks to self-configure their communication topology to balance the trade-off of scalability vs. coordination performance, adapt online to unpredictable environments, and robustly benefit from untrustworthy external commands. The provided methods are evaluated in information-gathering tasks of mapping, target tracking, and surveillance via both physics-based simulations and field experiments.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:00 - 11:15</td>
+                                    <td>Chi Ho (Humphrey) Leung</td>
+                                    <td>Learning Passive Continuous-Time Dynamics with Multistep Port-Hamiltonian Gaussian Processes</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    We propose the multistep port-Hamiltonian Gaussian process (MS-PHS GP) to learn physically consistent continuous-time dynamics and a posterior over the Hamiltonian from noisy, irregularly-sampled trajectories. By placing a GP prior on the Hamiltonian surface $H$ and encoding variable-step size multistep integrator constraints as finite linear functionals, MS-PHS GP enables closed-form conditioning of both the vector field and the Hamiltonian surface without latent states, while enforcing energy balance and passivity by design.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                We propose the multistep port-Hamiltonian Gaussian process (MS-PHS GP) to learn physically consistent continuous-time dynamics and a posterior over the Hamiltonian from noisy, irregularly-sampled trajectories. By placing a GP prior on the Hamiltonian surface $H$ and encoding variable-step size multistep integrator constraints as finite linear functionals, MS-PHS GP enables closed-form conditioning of both the vector field and the Hamiltonian surface without latent states, while enforcing energy balance and passivity by design. We state a finite-sample high-probability vector-field error bound that separates the estimation and multistep discretization terms. Lastly, we demonstrate improved vector-field recovery and well-calibrated Hamiltonian uncertainty on mass-spring, Van der Pol, and Duffing benchmarks.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:15 - 11:30</td>
+                                    <td>Michael Wozniak</td>
+                                    <td>Optimization of Learning-Based Guidance for Autonomous Spacecraft Docking</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    As the quantity of resident space objects near Earth continues to increase, robust technologies for on-orbit servicing and active debris removal are of increasing importance. Rendezvous & docking are critical mission phases in these applications and may be augmented via artificial learning methods to improve autonomy and adaptability to larger problem spaces. The open-form experience-based approach in reinforcement learning allows for rapid and automated repurposing towards new formulations such as updates to docking criteria or the introduction of additional objectives in the reward function.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                As the quantity of resident space objects near Earth continues to increase, robust technologies for on-orbit servicing and active debris removal are of increasing importance. Rendezvous & docking are critical mission phases in these applications and may be augmented via artificial learning methods to improve autonomy and adaptability to larger problem spaces. The open-form experience-based approach in reinforcement learning allows for rapid and automated repurposing towards new formulations such as updates to docking criteria or the introduction of additional objectives in the reward function. Several enhancements can improve the performance of the reinforcement learning algorithm including the data-driven augmentation of epsilon-greedy exploration, the sequential progression of task complexity facilitated by curriculum learning, the combination of offline & online learning, and Bayesian Optimization for hyperparameter tuning. The Deep Deterministic Policy Gradient algorithm is initially faced with substantial learning convergence challenges due to the complexity and nonlinearity of the docking problem. Robust docking performance with near-perfect success rates is first established by simplifying the problem and conducting Bayesian hyperparameter tuning to accomplish initial learning convergence. The successful initial results are then leveraged in offline/online learning to reinforce correct docking behavior, and the actor/critic networks can subsequently be subjected to a curriculum of increasingly complex tasks culminating in validated mission-ready docking behavior. The results imply that the unified application of learning, optimization & automation methods provide a scalable and adaptable framework for autonomous on-orbit operations.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:30 - 11:45</td>
+                                    <td>Jiancong Chen</td>
+                                    <td>A novel energy-efficient driving strategy for autonomous electric vehicle operations using vision language model and reinforcement learning</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Electric Vehicles (EVs), as the most common type of alternative fuel vehicles, show great potential for decreasing transportation energy consumption and reducing greenhouse gas emissions. In cognizance of these potential benefits, the growing market penetration of EVs, and the anticipated widespread adoption of autonomous vehicles (AVs), it is imperative to improve the energy efficiency of Autonomous Electric Vehicles (AEVs). Previous studies have shown that driver behavior directly affects vehicle energy consumption and automated driving will drastically shift driving behaviors compared to manual driving.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Electric Vehicles (EVs), as the most common type of alternative fuel vehicles, show great potential for decreasing transportation energy consumption and reducing greenhouse gas emissions. In cognizance of these potential benefits, the growing market penetration of EVs, and the anticipated widespread adoption of autonomous vehicles (AVs), it is imperative to improve the energy efficiency of Autonomous Electric Vehicles (AEVs). Previous studies have shown that driver behavior directly affects vehicle energy consumption and automated driving will drastically shift driving behaviors compared to manual driving. As such, the role of autonomous driving technologies in reducing energy consumption is gaining attention. AEVs can potentially enhance driving safety and energy efficiency through high-precision real-time maneuvering. However, compared to gasoline autonomous vehicles (GAVs), research on energy-efficient strategies for AEV operations remain underdeveloped, from the separate perspectives of a single AEV and a network of AEVs. The energy consumption of AEVs is tightly coupled to the autonomous driving behavior and internal energy management but suffers from hurdles including limited battery capacity and slow charging speed. In this context, this paper proposes a novel AEV driving strategy which integrates Vision-Language Models (VLMs) and Reinforcement Learning (RL) to maximize the energy efficiency while preserving driving safety. The methodology involves pretraining VLMs using offline expert driving datasets, thereby enabling them to evaluate safety outcomes as guidance for diverse traffic scenarios. Then, leveraging the safety guidance, a reward framework is developed to generate reward functions that incorporate elements of the surrounding environment: safety, traffic efficiency, and energy efficiency. In sufficiently safe scenarios, the RL-based agent is capable of controlling the speed and driving behavior of ego AEV to minimize energy consumption and maximize safety. To enhance the reliability of proposed driving strategy, an artificial potential field (APF) model was integrated downstream of the RL module. This enabled real-time evaluation of safety based on the state information of surrounding vehicles. The proposed strategy was trained and evaluated through extensive experiments on a CARLA simulation platform. The results demonstrate that the proposed approach effectively reduces energy consumption without affecting the collision rate and route completion rate compared to state-of-the-art (SOTA) baselines.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="time-col">11:45 - 12:00</td>
+                                    <td>Hojun Lee</td>
+                                    <td>Progressive Refinement via Informed Sampling for Robust Object Pose Estimation</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Object 6D Pose Estimation (OPE) is a crucial task highly applicable for many different real-world problems. Especially for robotics and advanced automation in manufacturing, robots capable of perceiving various poses of unseen objects can play a pivotal role in automating tasks and their reconfigurations without reprogramming. Although Generative Pretrained Transformer (GPT) ignites various concepts of foundation models in computer vision, this also raises the fundamental concern about safety issues that Deep Learning (DL)-based methods have always confronted.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Object 6D Pose Estimation (OPE) is a crucial task highly applicable for many different real-world problems. Especially for robotics and advanced automation in manufacturing, robots capable of perceiving various poses of unseen objects can play a pivotal role in automating tasks and their reconfigurations without reprogramming. Although Generative Pretrained Transformer (GPT) ignites various concepts of foundation models in computer vision, this also raises the fundamental concern about safety issues that Deep Learning (DL)-based methods have always confronted. Unlike some DL applications less likely to have rapid physical interactions beyond human interventions, OPE for various robots and their autonomy in safety-critical industries requires some kind of safety filters to screen unpredictable behaviors of existing Vision Foundation Models (VFM), maintaining their zero-shot adaptability. With this motivation, this paper presents Progressive Refinement via Informed Sampling for Multi-belief Object Pose Validation (PRISM), a hybrid of a large Object Segmentation Model (OSM) and variant of robust Point Cloud Registration (PCR) module. PRISM still utilizes object 3D models to propose and refine multiple object pose hypotheses just like other foundation model-like OPE frameworks. Yet, our approach purely relies on heuristic-guided searching and robust function-based local optimization to simultaneously sample, refine, and validate multiple hypotheses from initial correspondences. When testing the proposed PCR module using a synthetic Stanford bunny and publicly available OPE benchmark datasets, our approach outperforms most other robust PCR and OPE methods. Besides, the analyses show that performance of our approach is comparable to the existing foundation model-like OPE frameworks. But more importantly, PRISM is a training-free extension for zero-shot OPE, while it runs much faster (~10.0X) and more resilient to erroneous predictions from the large OSM than the other zero-shot OPE frameworks.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     </div>
                 </div>
         </section>
