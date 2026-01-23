@@ -429,18 +429,18 @@
                                 </tr>
                                 <tr>
                                     <td class="time-col">15:30 - 15:45</td>
-                                    <td>Luis Marques</td>
-                                    <td>Lies We Can Trust: Quantifying Action Uncertainty with Inaccurate Stochastic Dynamics through Conformalized Nonholonomic Lie Groups</td>
+                                    <td>Michael Wozniak</td>
+                                    <td>Optimization of Learning-Based Guidance for Autonomous Spacecraft Docking</td>
                                     <td>
                                         <details>
                                             <summary class="abstract-summary">
                                                 <div class="abstract-preview">
-                                                    We propose Conformal Lie-Group Action Prediction Sets (CLAPS), a symmetry-aware conformal prediction-based algorithm that constructs, for a given action, a set guaranteed to contain the resulting system configuration at a user-defined probability. Our assurance holds under both aleatoric and epistemic uncertainty, non-asymptotically, and does not require strong assumptions about the true system dynamics, the uncertainty sources, or the quality of the approximate dynamics model. Typically, uncertainty quantification is tackled by making strong assumptions about the error distribution or magnitude, or by relying on uncalibrated uncertainty estimates — i.e., with no link to frequentist probabilities — which are insufficient for safe control.
+                                                    As the quantity of resident space objects near Earth continues to increase, robust technologies for on-orbit servicing and active debris removal are of increasing importance. Rendezvous & docking are critical mission phases in these applications and may be augmented via artificial learning methods to improve autonomy and adaptability to larger problem spaces. The open-form experience-based approach in reinforcement learning allows for rapid and automated repurposing towards new formulations such as updates to docking criteria or the introduction of additional objectives in the reward function.
                                                 </div>
                                                 <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
                                             </summary>
                                             <div class="abstract-full">
-                                                We propose Conformal Lie-Group Action Prediction Sets (CLAPS), a symmetry-aware conformal prediction-based algorithm that constructs, for a given action, a set guaranteed to contain the resulting system configuration at a user-defined probability. Our assurance holds under both aleatoric and epistemic uncertainty, non-asymptotically, and does not require strong assumptions about the true system dynamics, the uncertainty sources, or the quality of the approximate dynamics model. Typically, uncertainty quantification is tackled by making strong assumptions about the error distribution or magnitude, or by relying on uncalibrated uncertainty estimates — i.e., with no link to frequentist probabilities — which are insufficient for safe control. Recently, conformal prediction has emerged as a statistical framework capable of providing distribution-free probabilistic guarantees on test-time prediction accuracy. While current conformal methods treat robots as Euclidean points, many systems have non-Euclidean configurations, e.g., some mobile robots have SE(2). In this work, we rigorously analyze configuration errors using Lie groups, extending previous Euclidean Space theoretical guarantees to SE(2). Our experiments on a simulated JetBot, and on a real MBot, suggest that by considering the configuration space’s structure, our symmetry-informed nonconformity score leads to more volume-efficient prediction regions which represent the underlying uncertainty better than existing approaches.
+                                                As the quantity of resident space objects near Earth continues to increase, robust technologies for on-orbit servicing and active debris removal are of increasing importance. Rendezvous & docking are critical mission phases in these applications and may be augmented via artificial learning methods to improve autonomy and adaptability to larger problem spaces. The open-form experience-based approach in reinforcement learning allows for rapid and automated repurposing towards new formulations such as updates to docking criteria or the introduction of additional objectives in the reward function. Several enhancements can improve the performance of the reinforcement learning algorithm including the data-driven augmentation of epsilon-greedy exploration, the sequential progression of task complexity facilitated by curriculum learning, the combination of offline & online learning, and Bayesian Optimization for hyperparameter tuning. The Deep Deterministic Policy Gradient algorithm is initially faced with substantial learning convergence challenges due to the complexity and nonlinearity of the docking problem. Robust docking performance with near-perfect success rates is first established by simplifying the problem and conducting Bayesian hyperparameter tuning to accomplish initial learning convergence. The successful initial results are then leveraged in offline/online learning to reinforce correct docking behavior, and the actor/critic networks can subsequently be subjected to a curriculum of increasingly complex tasks culminating in validated mission-ready docking behavior. The results imply that the unified application of learning, optimization & automation methods provide a scalable and adaptable framework for autonomous on-orbit operations.
                                             </div>
                                         </details>
                                     </td>
@@ -502,7 +502,7 @@
                             </thead>
                             <tbody>
                                 <tr>
-                                    <td class="time-col">10:30 - 10:45</td>
+                                    <td class="time-col">10:45 - 11:00</td>
                                     <td>Yuezhu Xu</td>
                                     <td>Efficient Compositional Lipschitz Estimates for Deep Neural Networks</td>
                                     <td>
@@ -520,7 +520,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="time-col">10:45 - 11:00</td>
+                                    <td class="time-col">11:00 - 11:15</td>
                                     <td>Zirui Xu</td>
                                     <td>Scalable and Reliable Coordination in Embodied Intelligent Networks: A Submodular Optimization and Online Learning Approach</td>
                                     <td>
@@ -538,7 +538,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="time-col">11:00 - 11:15</td>
+                                    <td class="time-col">11:15 - 11:30</td>
                                     <td>Chi Ho (Humphrey) Leung</td>
                                     <td>Learning Passive Continuous-Time Dynamics with Multistep Port-Hamiltonian Gaussian Processes</td>
                                     <td>
@@ -551,24 +551,6 @@
                                             </summary>
                                             <div class="abstract-full">
                                                 We propose the multistep port-Hamiltonian Gaussian process (MS-PHS GP) to learn physically consistent continuous-time dynamics and a posterior over the Hamiltonian from noisy, irregularly-sampled trajectories. By placing a GP prior on the Hamiltonian surface $H$ and encoding variable-step size multistep integrator constraints as finite linear functionals, MS-PHS GP enables closed-form conditioning of both the vector field and the Hamiltonian surface without latent states, while enforcing energy balance and passivity by design. We state a finite-sample high-probability vector-field error bound that separates the estimation and multistep discretization terms. Lastly, we demonstrate improved vector-field recovery and well-calibrated Hamiltonian uncertainty on mass-spring, Van der Pol, and Duffing benchmarks.
-                                            </div>
-                                        </details>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="time-col">11:15 - 11:30</td>
-                                    <td>Michael Wozniak</td>
-                                    <td>Optimization of Learning-Based Guidance for Autonomous Spacecraft Docking</td>
-                                    <td>
-                                        <details>
-                                            <summary class="abstract-summary">
-                                                <div class="abstract-preview">
-                                                    As the quantity of resident space objects near Earth continues to increase, robust technologies for on-orbit servicing and active debris removal are of increasing importance. Rendezvous & docking are critical mission phases in these applications and may be augmented via artificial learning methods to improve autonomy and adaptability to larger problem spaces. The open-form experience-based approach in reinforcement learning allows for rapid and automated repurposing towards new formulations such as updates to docking criteria or the introduction of additional objectives in the reward function.
-                                                </div>
-                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
-                                            </summary>
-                                            <div class="abstract-full">
-                                                As the quantity of resident space objects near Earth continues to increase, robust technologies for on-orbit servicing and active debris removal are of increasing importance. Rendezvous & docking are critical mission phases in these applications and may be augmented via artificial learning methods to improve autonomy and adaptability to larger problem spaces. The open-form experience-based approach in reinforcement learning allows for rapid and automated repurposing towards new formulations such as updates to docking criteria or the introduction of additional objectives in the reward function. Several enhancements can improve the performance of the reinforcement learning algorithm including the data-driven augmentation of epsilon-greedy exploration, the sequential progression of task complexity facilitated by curriculum learning, the combination of offline & online learning, and Bayesian Optimization for hyperparameter tuning. The Deep Deterministic Policy Gradient algorithm is initially faced with substantial learning convergence challenges due to the complexity and nonlinearity of the docking problem. Robust docking performance with near-perfect success rates is first established by simplifying the problem and conducting Bayesian hyperparameter tuning to accomplish initial learning convergence. The successful initial results are then leveraged in offline/online learning to reinforce correct docking behavior, and the actor/critic networks can subsequently be subjected to a curriculum of increasingly complex tasks culminating in validated mission-ready docking behavior. The results imply that the unified application of learning, optimization & automation methods provide a scalable and adaptable framework for autonomous on-orbit operations.
                                             </div>
                                         </details>
                                     </td>

@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>ICON Student Research Conference</title>
+    <title>Posters - ICON Student Research Conference</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400">
     <link rel="stylesheet" href="font-awesome-4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -24,6 +24,102 @@
             renderPage = false;
         }
     </script>
+    <style>
+        table {
+            font-family: 'Open Sans', sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+
+        th {
+            border: 1px solid #dddddd;
+            background-color: #2b2b2b;
+            color: #d6d6d6;
+            text-align: left;
+            padding: 12px;
+            font-size: 1.1rem;
+        }
+
+        td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 12px;
+            vertical-align: top;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .abstract-summary {
+            list-style: none;
+            cursor: pointer;
+            outline: none;
+        }
+        
+        .abstract-summary::-webkit-details-marker {
+            display: none;
+        }
+
+        .abstract-preview {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .abstract-full {
+            font-size: 0.95rem;
+            line-height: 1.6;
+            color: #333;
+            text-align: justify;
+        }
+
+        .more-link {
+            color: #3498db;
+            font-weight: 600;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            display: inline-block;
+        }
+
+        details[open] .abstract-preview,
+        details[open] .more-link {
+            display: none;
+        }
+        
+        .tm-section-header {
+            margin-bottom: 40px;
+        }
+
+        .session-title {
+            background-color: #c8a24a;
+            color: #000;
+            padding: 10px 20px;
+            margin-bottom: 5px;
+            font-weight: 700;
+            display: inline-block;
+        }
+        
+        .session-date {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+            color: #666;
+            font-weight: 600;
+        }
+        
+        .number-col {
+            font-weight: bold;
+            color: #555;
+            text-align: center;
+        }
+    </style>
 </head>
 
 <body>
@@ -36,19 +132,360 @@
     <div class="container">
         <div class="topnav">
             <a href="./">Home</a>
-            <a href="./#Registration">Registration and Abstract Submission</a>
+            <a href="./#Registration">Registrations</a>
             <a href="./#Schedule">Schedule</a>
+            <a href="./#Keynotes">Keynote Speakers</a>
             <a class="active" href="./#Information">Events</a>
             <a href="./#CorporatePartnership">Corporate Partnership</a>
-            <a href="./Contact">Contact</a>
+            <a href="Contact.html">Contact</a>
         </div>
 
         <section class="tm-section-2 tm-section-mb" id="Posters">
             <div class="row">
-                <div class="col-xl-12 col-lg-12 col-md-12 text-center">
+                <div class="col-xl-12 col-lg-12 col-md-12">
                     <br><br>
-                    <h2 class="tm-text-gray">TBA: Detailed Poster and Demos schedule will be posted soon</h2>
-                    <br><br>
+                    <header class="tm-section-header text-center">
+                        <h1 class="tm-text-gray">Posters & Demonstrations</h1>
+                        <p>Detailed list of student posters and live research demonstrations.</p>
+                    </header>
+
+                    <div>
+                        <h3 class="session-title">POSTER SESSION</h3>
+                        <div class="session-date">Thursday, January 29th, 2026</div>
+                    </div>
+                    
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th style="width: 10%;">Poster Number</th>
+                                    <th style="width: 20%;">Speaker</th>
+                                    <th style="width: 30%;">Title</th>
+                                    <th style="width: 40%;">Abstract</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="number-col">1</td>
+                                    <td>Kitae Kim</td>
+                                    <td>In-Row and Under-Canopy Autonomous Navigation System for Mobile Robots in Cornfields</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Precision agriculture uses technology to acquire and analyze farm data to monitor the state of crops. Traditionally, crop monitoring and assessment have been accomplished through costly, labor intensive, and time-consuming processes, such as crop scouting, manual sampling, and documenting the state of the farm. In recent years, Internet of Things (IoT) technology and agricultural robotics have emerged as viable approaches not only to improve efficiency and accuracy in crop management but also to implement and create new precision agriculture practices.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Precision agriculture uses technology to acquire and analyze farm data to monitor the state of crops. Traditionally, crop monitoring and assessment have been accomplished through costly, labor intensive, and time-consuming processes, such as crop scouting, manual sampling, and documenting the state of the farm. In recent years, Internet of Things (IoT) technology and agricultural robotics have emerged as viable approaches not only to improve efficiency and accuracy in crop management but also to implement and create new precision agriculture practices. The data obtained from agricultural IoT sensors and robots can be used to efficiently predict and control the state of the farm by analyzing crop stress, such as water, nitrogen, and potassium deficiencies. Therefore, these automated measurement systems address significant labor shortages, improve yields, and boost productivity.
+                                                <br><br>
+                                                In the cornfields, advanced remote sensing platforms, such as airborne systems (both manned and unmanned) or tractor-sized ground phenotyping platforms, are generally used for plant phenotyping. However, these platforms have difficulties capturing key phenotypic characteristics, such as stalk radii, ear heights, and leaf angles. These challenges arise primarily from the limited spatial conditions and unfavorable imaging geometries in cornfield environments. As a result, small-scale agricultural mobile robotic platforms have emerged as a considerable alternative for close-range monitoring and assessment of corn plants throughout the growing season. These small-scale ground robots are advantageous for inter-row traversal and under-canopy sensing in cornfields. 
+                                                <br><br>
+                                                Ultimately, agricultural ground robots for cornfields aim to automate the monitoring of corn plants by traversing in-row and under-canopy areas of cornfields autonomously. To achieve this automation goal, various sophisticated robotic technologies must be systematically developed. This is what inspired me to conduct research on autonomous navigation systems for agricultural robots. With this interest, I have focused on designing a robust in-row and under-canopy agricultural mobile robot navigation system for crop monitoring and physical sampling in cornfields, one of the key technologies in mobile robotics. This research effectively overcomes or leverages cornfields’ unstructured and challenging environmental conditions, such as unreliable GPS signals, cluttered hanging leaves, and varying illumination conditions.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">2</td>
+                                    <td>Prathamesh Chaudhari</td>
+                                    <td>Automated Optimal Design of Shell-and-Tube Heat Exchangers Using CAD and Bayesian Multi-Objective Optimization</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Shell-and-tube heat exchangers, or radiators, are the most common heat exchangers in the automotive industry. Designers aim to improve thermal performance while reducing pressure drop and cost, but current design processes—manual CAD modeling and iterative simulations—are slow and complex. This work introduces an automated design tool that integrates CAD generation, simulation, and optimization.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Shell-and-tube heat exchangers, or radiators, are the most common heat exchangers in the automotive industry. Designers aim to improve thermal performance while reducing pressure drop and cost, but current design processes—manual CAD modeling and iterative simulations—are slow and complex. This work introduces an automated design tool that integrates CAD generation, simulation, and optimization. Using CadQuery for parametric CAD modeling, Ansys Fluent for CFD, and GPflow for multi-objective Bayesian optimization, the tool streamlines the process from geometry creation to optimal design identification. Applied to shell-and-tube heat exchangers, it reduces design time, improves efficiency, and discovers new optimal configurations that enhance the Pareto front. The approach can be generalized to other multidisciplinary design problems to accelerate innovation with minimal human intervention.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">3</td>
+                                    <td>Zhishan Wang</td>
+                                    <td>controller and system design for autonomous racing vehicle</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Our task is to design controllers for autonomous racing's racing cars. We hope that the racing cars can still drive quickly, stably and safely without the intervention of human instructions. As the team most responsible for the controller design, we need to design a system that converts the best driving path desired by the racing car into actual operation instructions.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Our task is to design controllers for autonomous racing's racing cars. We hope that the racing cars can still drive quickly, stably and safely without the intervention of human instructions.
+                                                <br><br>
+                                                As the team most responsible for the controller design, we need to design a system that converts the best driving path desired by the racing car into actual operation instructions, so that the physical components of the racing car such as the engine, steering gear, and suspension can execute the path planning instructions.
+                                                <br><br>
+                                                In terms of methodology, we are implementing the PID (Proportional-Integral-Derivative) controller and ADRC (active disturbance rejection controller) in both lateral and longitudinal dimensions based on the physical model of a specific autonomous vehicle on MATLAB. 
+                                                <br><br>
+                                                We then use plot to show the tracking, states, yaw, steering and longitudinal acceleration. With the adjustments of the parameters, we lead to better performance in simulation. We will use the Simscape Vehicle library to do the simulation in the future as the visual representation.
+                                                <br><br>
+                                                Our results show that our PID controller is functional in moderate initial errors. After the PI for speed and PID for lateral, overshoot is initially high but has a short settling time, while saturation constraints are respected. Operation outside of the specific offset range causes the closed-loop to become unstable and diverge from the reference. ADRC will aim to make the controller work within a larger range and still converge. The goal of this research is to make autonomous vehicles run with robustness and accuracy at high speeds. We will continue to conduct tests and develop control methods in the future, attempting to make this autonomously controlled racing car run efficiently and quickly.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">4</td>
+                                    <td>Temitope Amosa</td>
+                                    <td>Robotic and Autonomous Systems</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Tactile feedback provides rich contact information for robotic actuators, offering detailed insights into object shape, texture, contact forces, deformation, and slip. Vision-based tactile sensors widely used in robotic systems typically employ a deformable gel or membrane that may be coated with fiducial markers or left unmarked, enabling operation in either a marker-based or markerless mode.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Tactile feedback provides rich contact information for robotic actuators, offering detailed insights into object shape, texture, contact forces, deformation, and slip. Vision-based tactile sensors widely used in robotic systems typically employ a deformable gel or membrane that may be coated with fiducial markers or left unmarked, enabling operation in either a marker-based or markerless mode. However, this design decision restricts the sensor to a single operating mode, limiting its versatility: marker-based sensing excels in precise manipulation, while markerless sensing is preferred for broader perception tasks.
+                                                <br><br>
+                                                Yet, fiducial markers—though indispensable for accurate contact geometry and motion tracking—also occlude the camera and degrade perception quality. This trade-off forces practitioners to choose between manipulation-oriented or perception-oriented sensing, creating a fundamental bottleneck in tactile robotics. To address this challenge, we propose a novel mode-switchable optical tactile sensing framework that enables seamless transitions between marker and markerless modes. The marker-to-markerless transformation is achieved using a generative model, while the inverse conversion is realized through a sparsely supervised regression model. Our approach allows a single-mode tactile sensor to operate effectively in both regimes without requiring any additional hardware modifications. This capability unlocks a unified tactile sensing modality suitable for both perception and manipulation, significantly broadening the operational flexibility of optical tactile sensors in robotic applications.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">5</td>
+                                    <td>Yusuf Adebakin</td>
+                                    <td>A Hardware-free Approach to Marker-Markerless Transition in Optic Tactile Sensors</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Tactile feedback provides rich contact information for robotic actuators, offering detailed insights into object shape, texture, contact forces, deformation, and slip. Vision-based tactile sensors widely used in robotic systems typically employ a deformable gel or membrane that may be coated with fiducial markers or left unmarked, enabling operation in either a marker-based or markerless mode.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Tactile feedback provides rich contact information for robotic actuators, offering detailed insights into object shape, texture, contact forces, deformation, and slip. Vision-based tactile sensors widely used in robotic systems typically employ a deformable gel or membrane that may be coated with fiducial markers or left unmarked, enabling operation in either a marker-based or markerless mode. However, this design decision restricts the sensor to a single operating mode, limiting its versatility: marker-based sensing excels in precise manipulation, while markerless sensing is preferred for broader perception tasks.
+                                                <br><br>
+                                                Yet, fiducial markers—though indispensable for accurate contact geometry and motion tracking—also occlude the camera and degrade perception quality. This trade-off forces practitioners to choose between manipulation-oriented or perception-oriented sensing, creating a fundamental bottleneck in tactile robotics. To address this challenge, we propose a novel mode-switchable optical tactile sensing framework that enables seamless transitions between marker and markerless modes. The marker-to-markerless transformation is achieved using a generative model, while the inverse conversion is realized through a sparsely supervised regression model. Our approach allows a single-mode tactile sensor to operate effectively in both regimes without requiring any additional hardware modifications. This capability unlocks a unified tactile sensing modality suitable for both perception and manipulation, significantly broadening the operational flexibility of optical tactile sensors in robotic applications.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">6</td>
+                                    <td>Ludwig Tay</td>
+                                    <td>Low-Level Centroidal Whole-Body Controller for Humanoid Motion Retargeting RL Pipelines</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Reinforcement learning has recently enabled promising progress in humanoid loco-manipulation. However, most policies operate at low frequency and rely on PD control for torque tracking. Consequently, the policy must produce both feedforward and feedback components through a single control channel. In contrast, model-based controllers provide precise planning via online optimization but are sensitive to modeling errors.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Reinforcement learning has recently enabled promising progress in humanoid loco-manipulation. However, most policies operate at low frequency and rely on PD control for torque tracking. Consequently, the policy must produce both feedforward and feedback components through a single control channel. In contrast, model-based controllers provide precise planning via online optimization but are sensitive to modeling errors. Attempts to combine both approaches face competing demands between GPU-parallel RL for high sample efficiency and the iterative constrained optimizers used in model-based control.
+                                                <br><br>
+                                                We introduce a centroidal whole-body controller that serves as a drop-in replacement for PD control in standard RL pipelines, splitting control between a feedforward centroidal controller and feedback PD controller. Additionally, our formulation simplifies model-based control by using a learned contact state and reference torques, shifting constraints previously enforced through optimization to constraints implicitly enforced by the RL policy, allowing for fast, closed-form computation of joint torques.
+                                                <br><br>
+                                                We validate the combined RL–centroidal framework on multiple loco-manipulation tasks using existing motion-retargeting pipelines. Our experiments demonstrate up to a 22% reduction in base-velocity tracking error for a balancing task with only an 11% increase in computational cost, showing that model-based control can be integrated into RL pipelines efficiently.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">7</td>
+                                    <td>Ruhaan Batta</td>
+                                    <td>Automated Data Processing and Visualization Pipeline for WECC-240 Power-System Dynamic Simulation</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    This project involves developing an automated workflow for preparing large power-system datasets for dynamics simulation. Raw data of the WECC-240 bus system, provided by NREL (National Renewable Energy Laboratory), is distributed across two different files - the .raw file containing the static machine data, and the .dyr file containing the dynamic data.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                This project involves developing an automated workflow for preparing large power-system datasets for dynamics simulation. Raw data of the WECC-240 bus system, provided by NREL (National Renewable Energy Laboratory), is distributed across two different files - the .raw file containing the static machine data, and the .dyr file containing the dynamic data - that detail information for buses, branches, transformers, loads, generators and IBRs. The files are extremely dense, making manual parsing very time consuming and inefficient. Thus, an initial semi-manual process was adopted to understand the processing logic before automation. This involved extracting specific parts of the raw data relevant to the system component, identifying and assigning the data to the variables involved, and processing them before producing the formatted output files using Python. As the project matured this process was fully automated, resulting in a consistent and reproducible pipeline capable of handling large input datasets with minimal user intervention. 
+                                                <br><br>
+                                                The automated system now generates standardized .m and .py files that serve as the input to a pre-existing code that solves the power system dynamics. This reduces human error in inputting data, and also speeds up the process. To improve usability, a custom user interface (UI) was developed to streamline the entire workflow, allowing users to upload raw data files, run the full processing pipeline, and receive the organized output files without interacting with the back-end scripts. The tool also produces a unified JSON file from the raw data, creating a coherent, searchable data structure.
+                                                <br><br>
+                                                The Data Explorer component of the UI displays the JSON file in a clean, human-readable grid. Users can navigate through complex multi-field system data, filter values, verify consistency, and inspect specific components without switching tools, allowing for a smoother debugging phase. In addition to data inspection, the software includes an in-built validation check for the raw data, as well as visualization capabilities for the WECC-240 bus system using spring, Kamada-Kawai, and circular layouts. These graphical views help users confirm network connectivity, detect anomalies, and better understand the structure of the grid. 
+                                                <br><br>
+                                                Ongoing development involves integration of the pre-existing simulation code with the GUI. This enables users to run dynamic simulations directly through the UI and view outputs such as eigenvalue plots, stability metrics, and control-model behavior. Together, visualization enhancements, work-flow improvements in the automation and organization of data, and direct integration with the code improves accessibility, accuracy and efficiency for researchers working with large power-system datasets. 
+                                                <br><br>
+                                                By: Mahrukh Anindya, Ruhaan Batta, Trinay Ravella
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">8</td>
+                                    <td>Cindy Huang</td>
+                                    <td>Vision-Based Modeling and Control of Material Placement in Digital Glass Forming</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Digital Glass Forming (DGF) is a manufacturing process that uses a laser to locally heat glass, creating a workable volume of material that can be shaped. When a filament or fiber is continuously fed into the work zone, the process enables additive manufacturing of glass components. While it is relatively straightforward to fabricate consistent morphologies once the process reaches steady state, achieving repeatable and reliable morphologies during unsteady periods is significantly more challenging.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Digital Glass Forming (DGF) is a manufacturing process that uses a laser to locally heat glass, creating a workable volume of material that can be shaped. When a filament or fiber is continuously fed into the work zone, the process enables additive manufacturing of glass components. While it is relatively straightforward to fabricate consistent morphologies once the process reaches steady state, achieving repeatable and reliable morphologies during unsteady periods is significantly more challenging. Examples of unsteady deposition include starting and ending a track, sudden changes in deposition direction, and closing a connected track. In this poster, we discuss our work on modeling unsteady glass deposition and the control strategies we have developed to achieve precise deposition using a visual camera. Our real-time control system operates on Linux and coordinates a fiber laser, a filament feeder, and a motion system upon which the part is fixed. A thermal camera, visual camera, and confocal displacement sensor are used for real-time data acquisition, and all data is temporally and spatially registered. In this work, we focus on the specific unsteady fabrication case of deposition starts. To achieve consistent starts, we heat the filament to produce a repeatable tip size and position, then accelerate it toward the substrate at the desired velocity. As the filament is heated, a molten ball forms at the tip and grows as it moves up the filament. We modeled the height and area of this molten ball as functions of laser power and filament displacement. This physics-based and data-driven model is integrated into a PI controller to regulate the tip size and position by determining the appropriate laser power command profiles. Iterative Learning Control (ILC) will then be applied to determine the filament feed velocity profiles that yield consistent starting and ending profiles such that, as measured by the camera, the track profile matches the steady-state morphology and begins/ends at the desired locations. A set of experiments will be conducted using constant process parameters, and another set will be conducted with closed-loop control.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">9</td>
+                                    <td>Zhixian Hu</td>
+                                    <td>Vibrissae-Inspired Vision-Based Magnetic-Actuated Whisker</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Tactile perception is significant for robotic operation in unstructured environments. Whisker-based sensors offer lightweight bio-inspired solutions, yet most rely on single-whisker sensing and are limited by passive interaction and constrained functionality. Here we present a circular array of eight independently actuated whiskers, each driven by a pulse-switchable permanent magnet and tracked by a camera.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Tactile perception is significant for robotic operation in unstructured environments. Whisker-based sensors offer lightweight bio-inspired solutions, yet most rely on single-whisker sensing and are limited by passive interaction and constrained functionality. Here we present a circular array of eight independently actuated whiskers, each driven by a pulse-switchable permanent magnet and tracked by a camera. This design enables simultaneous multi-point sensing and coordinated actuation, supporting diverse functions. Quantitative analyses demonstrate accurate pixel-to-physical mapping, consistent pixel-to-force characterization, and long-term repeatability. In this work, we show that an vibrissae-inspired vision-based magnetic-actuated whisker array integrating distributed perception with active interaction achieves reliable physical mapping, repeatable sensing, and delicate grasping, thereby advancing tactile sensing and laying the foundation for contact-driven exploration, soft manipulation, and adaptive behavior in dynamic environments.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">10</td>
+                                    <td>Calar Duong</td>
+                                    <td>Application of Hybrid Energy Collecting and Storage System: Self-charging drone delivering emergency supplies for residents in flooded area.</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Disasters such as hurricanes and floods increasingly disrupt human access to food, medicine, and emergency supplies. Drones have been considered as promising tools for emergency supplies delivering; however, their effectiveness is constrained by limited battery life. Moreover, extreme environment during disasters makes it hard to recharge drone batteries, while the duration of most delivery missions is uncertain.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Disasters such as hurricanes and floods increasingly disrupt human access to food, medicine, and emergency supplies. Drones have been considered as promising tools for emergency supplies delivering; however, their effectiveness is constrained by limited battery life. Moreover, extreme environment during disasters makes it hard to recharge drone batteries, while the duration of most delivery missions is uncertain. Therefore, this research develops a self-charging drone equipped with a Hybrid Energy Collecting and Storage System to extend battery life and ensure sufficient power during operation. Specifically, Hybrid Energy Collecting and Storage System is the power management system that absorbs energy from environment, such as wind, solar, and thermal energy. The harvested energy is stored in a supercapacitor and released to recharge the battery whenever its capacity falls below 30%. This project utilizes Python programming and real meteorological data from the National Centers for Environmental Information (NCEI) for Tampa, Florida, collected after Milton Hurricane, to stimulate the performance of the Hybrid Energy Collecting and Storage System. Beyond energy control, the project employs the Robot Operating System (ROS) to generate a 3-D environmental maps using LiDAR and GPS data. A mapping coordinator node identifies delivery zones and computes efficient flight trajectories while accounting for real-time energy availability. The integration of ROS and Python enables the drone to map delivery zone autonomously, optimize routes for minimal energy cost, and self-charge. Experiments and analyses show that under realistic post-hurricane weather conditions, the Hybrid Energy Collecting and Storage System can extend flight endurance by more than 35% compared to conventional battery-powered UAVs, maintaining operation even under low sunlight or weak wind conditions.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">11</td>
+                                    <td>James Gilliam</td>
+                                    <td>Methods of Convex Optimization for Vector Alignment Attitude Control</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Attitude Controllers are commonly used in aerospace applications to rotate a spacecraft into a desired orientation. However, when the goal is simply to align a body-frame vector with an inertial vector, this is inefficient because time and propellant are wasted aligning the roll angle of the body about the aligned target vector, which is unnecessary. Instead, the Pointing Controller’s goal is simply the single vector alignment with zero angular velocity.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Attitude Controllers are commonly used in aerospace applications to rotate a spacecraft into a desired orientation. However, when the goal is simply to align a body-frame vector with an inertial vector, this is inefficient because time and propellant are wasted aligning the roll angle of the body about the aligned target vector, which is unnecessary. Instead, the Pointing Controller’s goal is simply the single vector alignment with zero angular velocity. The aim of this thesis research will be to derive attitude thruster-controlled trajectories for this Pointing Controller, optimized for minimum time using Sequential Convex Optimization. Various reference trajectories, such as 1DOF planar and unstable constant torque bang-bang control, are explored to minimize both time of flight and computation. Depending on Monte Carlo tests of various trajectories, this may yield guidance techniques that are fast enough to be practical for onboard systems, and thus very likely the optimal technique for spacecraft vector pointing control.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">12</td>
+                                    <td>Saba Samadi</td>
+                                    <td>Robust Safety-Critical Control of Networked SIR Dynamics</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    We present a robust safety-critical control framework tailored for networked susceptible-infected-recovered (SIR) epidemic dynamics, leveraging control barrier functions (CBFs) and robust control barrier functions to address the challenges of epidemic spread and mitigation. In our networked SIR model, each node must keep its infection level below a critical threshold, despite dynamic interactions with neighboring nodes and inherent uncertainties in the epidemic parameters and measurement errors.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                We present a robust safety-critical control framework tailored for networked susceptible-infected-recovered (SIR) epidemic dynamics, leveraging control barrier functions (CBFs) and robust control barrier functions to address the challenges of epidemic spread and mitigation. In our networked SIR model, each node must keep its infection level below a critical threshold, despite dynamic interactions with neighboring nodes and inherent uncertainties in the epidemic parameters and measurement errors, to ensure public health safety. We first derive a CBF-based controller that guarantees infection thresholds are not exceeded in the nominal case. We enhance the framework to handle realistic epidemic scenarios under uncertainties by incorporating compensation terms that reinforce safety against uncertainties: an independent method with constant bounds for uniform uncertainty, and a novel approach that scales with the state to capture increased relative noise in early or suppressed outbreak stages. Simulation results on a networked SIR system illustrate that the nominal CBF controller maintains safety under low uncertainty, while the robust approaches provide formal safety guarantees under higher uncertainties; in particular, the novel method employs more conservative control efforts to provide larger safety margins, whereas the independent approach optimizes resource allocation by allowing infection levels to approach the boundaries in steady epidemic regimes.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">13</td>
+                                    <td>Joseph Broniszewski</td>
+                                    <td>Optimal Sensor Placement for State of Charge Estimation in Thermal Energy Storage Device</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Managing misalignment between the supply and demand of power on the electrical grid is becoming increasingly important with the growing reliance on renewable energy produced from sources such as solar and wind. Building HVAC systems play an important role on this system given that they constitute a substantial electrical load on the grid. Thermal energy storage (TES) can help manage this misalignment through load shifting energy used to power HVAC systems.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Managing misalignment between the supply and demand of power on the electrical grid is becoming increasingly important with the growing reliance on renewable energy produced from sources such as solar and wind. Building HVAC systems play an important role on this system given that they constitute a substantial electrical load on the grid. Thermal energy storage (TES) can help manage this misalignment through load shifting energy used to power HVAC systems. Compared against traditional methods of sensible heat storage, using a composite phase change material-based TES can allow for improved heat transfer and energy density. To best utilize this phase change material-based TES, an accurate estimate for the state of charge is required. Dynamic modeling and state estimation theory can be applied to achieve an improved state of charge estimate. There also exists a need for optimal placement of sensors within the TES, both to improve performance and to minimize the number of required sensors, which can aid in the commercial viability of such a system. This work proposes a method for determining optimal sensor placement within a TES device using dynamic modeling and estimation co-design.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">14</td>
+                                    <td>Adikesh Nathan</td>
+                                    <td>Automated Infill Generation and Finite Element Evaluation for Optimizing 3D-Printed Compliant Grippers</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Recent advances in manufacturing have enabled the rapid prototyping of 3D-printed compliant robotic grippers, increasing the focus of researchers on optimizing their structure to improve performance. The ability of these grippers is greatly influenced by both the infill geometry and density, which together govern the force transmission and compliance of the gripper.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Recent advances in manufacturing have enabled the rapid prototyping of 3D-printed compliant robotic grippers, increasing the focus of researchers on optimizing their structure to improve performance. The ability of these grippers is greatly influenced by both the infill geometry and density, which together govern the force transmission and compliance of the gripper. Compliance is essential because it allows the gripper to conform to an object’s shape, enabling more uniform distribution of contact forces. At the same time, effective force transmission is required to sufficiently grasp the object. Together these properties enable the manipulation of delicate or irregularly shaped objects without breaking them. Prior work completed in the lab has shown that finite element analysis (FEA) can accurately predict real-world gripper performance by evaluating maximum point displacement and stress under prescribed loads. While faster than manually testing grippers, running FEA on a large set of both infill patterns and densities still remains largely time consuming and manual. The inability of researchers to explore the vast design space of possible grippers limits the potential to optimize gripper structure and function. 
+                                                <br><br>
+                                                In this work, we present a tool that automates the generation, simulation, and comparison of diverse infill architectures for predefined geometries. The software procedurally generates various common 3D-printing infills, including fin-ray, grid, honeycomb, and triangle, at differing densities, generates a mesh, and runs a predefined FEA pipeline to calculate the stress and displacement for a given load. Then, using a formula developed in the lab that combines both metrics, the software can rank gripper structures, providing researchers with valuable information on the viability of any infill for their specific use-case. Preliminary results have demonstrated agreement between rankings determined by the software, manual FEA, and real-world testing. Ultimately, by improving the ability of researchers and manufacturers to find optimal gripper infills, the proposed tool can be used to create better products for a wide array of application cases.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">15</td>
+                                    <td>Margaret Wielatz</td>
+                                    <td>Designing a Human Autonomy Teaming Platform to Research the Effect of Communication on Team Performance</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Human-autonomy teaming (HAT) is becoming critical across many sectors of society, particularly as autonomous systems (enhanced by AI) advance in capability. As a result, it is important for humans to be able to collaborate effectively with robots. Prior research has shown that team cognition is an emergent state that promotes effective team performance, with communication being essential for team success.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Human-autonomy teaming (HAT) is becoming critical across many sectors of society, particularly as autonomous systems (enhanced by AI) advance in capability. As a result, it is important for humans to be able to collaborate effectively with robots. Prior research has shown that team cognition is an emergent state that promotes effective team performance, with communication being essential for team success. This is true for both human-human and human-autonomy teams. Communication allows teammates to share information to help maintain situational awareness, cultivate trust, and reduce workload, in turn impacting individual and team performance. Therefore, understanding and modeling the relationship between communication, human cognitive states, and team performance is essential toward advancing the state-of-the-art in human-autonomy teaming, particularly for teams comprised of multiple humans and agents. Critical research questions remain unanswered, such as “how can we design a scalable set of models to inform communication content and frequency between the agents and the human to maximize performance outcomes?” The objective of this research is to build a closed-loop algorithmic framework that optimizes bidirectional communication features to influence human cognitive states and thereby improve team performance.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="number-col">16</td>
+                                    <td>Travis Hastreiter</td>
+                                    <td>Real Time Sequential Convex Optimization for Small Scale Autonomous Landing</td>
+                                    <td>
+                                        <details>
+                                            <summary class="abstract-summary">
+                                                <div class="abstract-preview">
+                                                    Autonomous landing systems seek to maximize the reusability and sustainability of launch vehicles. The Collegiate Lander Challenge invites student teams from across the country to complete a series of challenges in developing an autonomously landing rocket. ASTRA is a vertical-landing rocket testbed developed by Purdue Space Program's Active Controls (AC) Team that seeks to test GNC and Avionics systems on a low-stakes, EDF-propelled rocket.
+                                                </div>
+                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
+                                            </summary>
+                                            <div class="abstract-full">
+                                                Autonomous landing systems seek to maximize the reusability and sustainability of launch vehicles. The Collegiate Lander Challenge invites student teams from across the country to complete a series of challenges in developing an autonomously landing rocket. ASTRA is a vertical-landing rocket testbed developed by Purdue Space Program's Active Controls (AC) Team that seeks to test GNC and Avionics systems on a low-stakes, EDF-propelled rocket before building up to a full autonomously landing liquid rocket. The vehicle is fitted with onboard inertial sensing and actuators capable of modulating thrust and attitude, which enables real-time closed-loop control. Purdue Space Program's Astrodynamics and Space Applications (ASA) Team is working in collaboration with AC to develop a high level trajectory optimization layer using sequential convex programming (SCP) that computes dynamically feasible, fuel-efficient landing trajectories, and an onboard MPC layer, using a similar SCP formulation, that tracks those trajectories while rejecting disturbances that may arise. The online MPC system will run on ASTRA's embedded flight computer and is designed to be resource efficient. To verify this, hardware-in-the-loop tests are performed. Initial simulations show that this trajectory optimization and MPC framework can consistently guide the vehicle from perturbed initial conditions to a safe, upright landing while satisfying thrust and attitude constraints. Further, Monte Carlo campaigns confirm that the controller maintains small enough terminal position and attitude errors and respects actuator limits. This work contributes a reusable experimental framework for optimal control of landing rockets that enables future iterations to build on its design. Next steps involve integrating both the trajectory optimization and MPC algorithms with ASTRA for flight testing. Beyond enabling future PSP flight tests, these algorithms and ASTRA provide a platform that the broader autonomy and control community at Purdue can explore such as robust MPC, real-time control, and resilient aerospace systems.
+                                            </div>
+                                        </details>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
