@@ -234,7 +234,7 @@
                                                 <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
                                             </summary>
                                             <div class="abstract-full">
-                                                This project involves developing an automated workflow for preparing large power-system datasets for dynamics simulation. Raw data of the WECC-240 bus system, provided by NREL (National Renewable Energy Laboratory), is distributed across two different files - the .raw file containing the static machine data, and the .dyr file containing the dynamic data - that detail information for buses, branches, transformers, loads, generators and IBRs. The files are extremely dense, making manual parsing very time consuming and inefficient. Thus, an initial semi-manual process was adopted to understand the processing logic before automation. This involved extracting specific parts of the raw data relevant to the system component, identifying and assigning the data to the variables involved, and processing them before producing the formatted output files using Python. As the project matured this process was fully automated, resulting in a consistent and reproducible pipeline capable of handling large input datasets with minimal user intervention. 
+                                                This project involves developing an automated workflow for preparing large power-system datasets for dynamics simulation. Raw data of the WECC-240 bus system, provided by NREL (National Renewable Energy Laboratory), is distributed across two different files - the .raw file containing the static machine data, and the .dyr file containing the dynamic data - that detail information for buses, branches, transformers, loads, generators and IBRs. The presidential files are extremely dense, making manual parsing very time consuming and inefficient. Thus, an initial semi-manual process was adopted to understand the processing logic before automation. This involved extracting specific parts of the raw data relevant to the system component, identifying and assigning the data to the variables involved, and processing them before producing the formatted output files using Python. As the project matured this process was fully automated, resulting in a consistent and reproducible pipeline capable of handling large input datasets with minimal user intervention. 
                                                 <br><br>
                                                 The automated system now generates standardized .m and .py files that serve as the input to a pre-existing code that solves the power system dynamics. This reduces human error in inputting data, and also speeds up the process. To improve usability, a custom user interface (UI) was developed to streamline the entire workflow, allowing users to upload raw data files, run the full processing pipeline, and receive the organized output files without interacting with the back-end scripts. The tool also produces a unified JSON file from the raw data, creating a coherent, searchable data structure.
                                                 <br><br>
@@ -267,18 +267,18 @@
                                 </tr>
                                 <tr>
                                     <td class="number-col">6</td>
-                                    <td>Henry Hellmann</td>
-                                    <td>LSTM-Based Trajectory Prediction for Human-Drone Interaction in Structured Environments</td>
+                                    <td>Steven Van Hulle, Alex Gansler, Alex Valdes, Andrew Shelley, and Margulan Muhametkarim</td>
+                                    <td>RoBoat: Autonomous Boating Challenge</td>
                                     <td>
                                         <details>
                                             <summary class="abstract-summary">
                                                 <div class="abstract-preview">
-                                                    In robotic motion planning, anticipating human movement is critical for safe and efficient navigation in structured environments such as factory floors. While deep learning methods such as LSTMs are effective for trajectory prediction, they often rely on large datasets and complex human body models. This work presents a lightweight LSTM-based prediction model that uses head motion data to forecast human paths in structured environments.
+                                                    This research develops an autonomous navigation system for maritime environments, addressing the dynamic challenges of aquatic navigation. Unlike land-based autonomous systems that navigate relatively static environments, our approach must account for shifting wave patterns, unpredictable currents, and transient obstacles.
                                                 </div>
                                                 <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
                                             </summary>
                                             <div class="abstract-full">
-                                                In robotic motion planning, anticipating human movement is critical for safe and efficient navigation in structured environments such as factory floors. While deep learning methods such as LSTMs are effective for trajectory prediction, they often rely on large datasets and complex human body models. This work presents a lightweight LSTM-based prediction model that uses head motion data to forecast human paths in structured environments. We integrate this model with a Dynamic Rapidly- Exploring Random Tree (DRRT) path planner to allow a drone to adaptively avoid predicted human trajectories in real time. Unlike prior work using public datasets, our approach is trained and validated using in-lab motion capture data and real-world human-drone interaction experiments. Experimental results demonstrate that the system can safely and effectively navigate shared environments with humans.
+                                                This research develops an autonomous navigation system for maritime environments, addressing the dynamic challenges of aquatic navigation. Unlike land-based autonomous systems that navigate relatively static environments, our approach must account for shifting wave patterns, unpredictable currents, and transient obstacles. Navigation is conducted using relatively few landmarks present on otherwise flat water. Using an integrated multi-sensor localization method, we aim to achieve real-time obstacle detection, localization, and adaptive pathfinding in complex water conditions. Our model incorporates data from four RGB depth cameras for identification of markers and inertial measurement units. Sensor inputs are processed through a pipeline designed to filter out noise from water movement and sensor error, ensure compatibility between sensor systems that output data at different rates, and prioritize critical real-time data to path-find its destination. Though results are pending, this technology has significant applications across global trade, disaster response, defense, and environmental monitoring. By advancing autonomous navigation at sea, this project aims to reduce human risk and improve operational efficiency.
                                             </div>
                                         </details>
                                     </td>
@@ -550,7 +550,7 @@
                                                 <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
                                             </summary>
                                             <div class="abstract-full">
-                                                Inverse reinforcement learning is the problem of inferring a reward function from an optimal policy or demonstrations by an expert. In this work, it is assumed that the reward is expressed as a reward machine whose transitions depend on atomic propositions associated with the state of a Markov Decision Process (MDP). Our goal is to identify the true reward machine using finite information. To this end, we first introduce the notion of a prefix tree policy which associates a distribution of actions to each state of the MDP and each attainable finite sequence of atomic propositions. Then, we characterize an equivalence class of reward machines that can be identified given the prefix tree policy. Finally, we propose a SAT-based algorithm that uses information extracted from the prefix tree policy to solve for a reward machine. It is proved that if the prefix tree policy is known up to a sufficient (but finite) depth, our algorithm recovers the exact reward machine up to the equivalence class. This sufficient depth is derived as a function of the number of MDP states and (an upper bound on) the number of states of the reward machine. These results are further extended to the case where we only have access to demonstrations from an optimal policy. Several examples, including discrete grid and block worlds, a continuous state-space robotic arm, and real data from experiments with mice, are used to demonstrate the effectiveness and generality of the approach.
+                                                Inverse reinforcement learning is the problem of inferring a reward function from an optimal policy or demonstrations by an expert. In this work, it is assumed that the reward is expressed as a reward machine whose transitions depend on atomic propositions associated with the state of a Markov Decision Process (MDP). Our goal is to identify the true reward machine using finite information. To this end, we first introduce the notion of a prefix tree policy which associates a distribution of actions to each state of the MDP and each attainable finite sequence of atomic propositions. Then, we character an equivalence class of reward machines that can be identified given the prefix tree policy. Finally, we propose a SAT-based algorithm that uses information extracted from the prefix tree policy to solve for a reward machine. It is proved that if the prefix tree policy is known up to a sufficient (but finite) depth, our algorithm recovers the exact reward machine up to the equivalence class. This sufficient depth is derived as a function of the number of MDP states and (an upper bound on) the number of states of the reward machine. These results are further extended to the case where we only have access to demonstrations from an optimal policy. Several examples, including discrete grid and block worlds, a continuous state-space robotic arm, and real data from experiments with mice, are used to demonstrate the effectiveness and generality of the approach.
                                             </div>
                                         </details>
                                     </td>
@@ -679,24 +679,6 @@
                                 </tr>
                                 <tr>
                                     <td class="number-col">9</td>
-                                    <td>Xinlong Du</td>
-                                    <td>Variational Generative Modeling of Stochastic Point Processes</td>
-                                    <td>
-                                        <details>
-                                            <summary class="abstract-summary">
-                                                <div class="abstract-preview">
-                                                    We consider approximate inference for a class of Cox point processes i.e., point processes with stochastic intensities. Specifically, we consider processes where the Poisson intensity function is modeled as the solution of a stochastic differential equation (SDE). We propose a VAE-like approach where the latent variable is the solution to an SDE...
-                                                </div>
-                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
-                                            </summary>
-                                            <div class="abstract-full">
-                                                We consider approximate inference for a class of Cox point processes i.e., point processes with stochastic intensities. Specifically, we consider processes where the Poisson intensity function is modeled as the solution of a stochastic differential equation (SDE). We propose a VAE-like approach where the latent variable is the solution to an SDE, the decoder is fixed (mapping the intensity function to a realization of an inhomogeneous Poisson process), and the encoder maps a point process realization to a posterior path measure corresponding to a diffusion process. Using tools from the theory of {\it enlargement of filtrations}, we show that the posterior path measure lies in a variational family of SDE path measures. Consequently, evidence lower bound (ELBO) maximization coincides with likelihood maximization. We also introduce hybrid encoder architectures for modeling the drift function of the posterior SDE, conditioned on varying length point process sample paths. Experiments on synthetic data showcase the ability to recover the ground truth measure and highlight the potential of this framework for modeling over-dispersed point processes.
-                                            </div>
-                                        </details>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="number-col">10</td>
                                     <td>Peter Frazier</td>
                                     <td>Definition of a KO/DMD Model of Uniaxial Deformation</td>
                                     <td>
@@ -714,7 +696,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">11</td>
+                                    <td class="number-col">10</td>
                                     <td>Shengqing Xia</td>
                                     <td>RSSS: Robust Structural Semantic Segmentation for Autonomous Drone Delivery to Door</td>
                                     <td>
@@ -732,25 +714,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">12</td>
-                                    <td>Santosh Rajkumar</td>
-                                    <td>Real-Time Linear MPC for Quadrotors on SE(3): An Analytical Koopman-Based Realization</td>
-                                    <td>
-                                        <details>
-                                            <summary class="abstract-summary">
-                                                <div class="abstract-preview">
-                                                    Achieving real-time optimal control for agile aerial robots remains a central challenge in modern robotics. While nonlinear model predictive control (NMPC) offers high accuracy, its computational cost often prevents reliable onboard deployment. Conversely, linear MPC (LMPC) enables real-time feasibility but at the expense of model fidelity...
-                                                </div>
-                                                <div class="more-link">More... <i class="fa fa-angle-down"></i></div>
-                                            </summary>
-                                            <div class="abstract-full">
-                                                Achieving real-time optimal control for agile aerial robots remains a central challenge in modern robotics. While nonlinear model predictive control (NMPC) offers high accuracy, its computational cost often prevents reliable onboard deployment. Conversely, linear MPC (LMPC) enables real-time feasibility but at the expense of model fidelity, especially for systems with strongly nonlinear, coupled rotational–translational dynamics such as quadrotors evolving on the SE(3) manifold. This work presents KQ-LMPC, a Koopman-based Linear Model Predictive Control (LMPC) framework that is aimed at bridging this long-standing gap between computational efficiency and nonlinear accuracy. The key idea is an analytical Linear Parameter-Varying (LPV) realization of the full quadrotor dynamics, derived from Koopman operator theory. Unlike data-driven lifting approaches, our formulation employs analytically designed Koopman observables that encode the nonlinear coupling between attitude and translational motion, yielding a lifted quai-linear model. The resulting predictive model evolves linearly in the lifted coordinates while preserving the essential nonlinear structure of SE(3) dynamics. This allows convex, constraint-aware quadratic programming (QP) formulations that are both theoretically interpretable and computationally efficient. We demonstrate solve times under 10 ms on embedded hardware (NVIDIA Jetson NX), enabling true real-time MPC execution without recourse to learning-based approximations or neural surrogates. Hardware experiments validate the framework’s efficacy in trajectory tracking tasks under reasonably agile flight conditions. The controller consistently achieves performance on par with NMPC while maintaining the stability and predictability of convex optimization. Importantly, KQ-LMPC is fully analytical, data-free, and explainable, providing a transparent alternative to neural or regression-based Koopman MPC variants. To the best of our knowledge, this represents the first experimentally validated Koopman-LMPC for quadrotors that: operates on the full SE(3) configuration space, uses closed-form Koopman observables, and achieves real-time embedded implementation without offline training or system identification. The proposed approach, integrated into an open-source repository and PyPI package, establishes a new benchmark for hardware-deployable, explainable predictive control in aerial robotics.
-                                            </div>
-                                        </details>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td class="number-col">13</td>
+                                    <td class="number-col">11</td>
                                     <td>I-Chia Chang</td>
                                     <td>Rejection of sinusoidal disturbances with unknown frequencies for hybrid linear systems: A case study on bipedal walking on a multi-directional moving platform</td>
                                     <td>
@@ -768,7 +732,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">14</td>
+                                    <td class="number-col">12</td>
                                     <td>Jiancong Chen</td>
                                     <td>A novel energy-efficient driving strategy for autonomous electric vehicle operations using vision language model and reinforcement learning</td>
                                     <td>
@@ -786,7 +750,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">15</td>
+                                    <td class="number-col">13</td>
                                     <td>Zhixian Hu</td>
                                     <td>Vibrissae-inspired vision-based magnetic-actuated whisker</td>
                                     <td>
@@ -804,7 +768,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">16</td>
+                                    <td class="number-col">14</td>
                                     <td>Abbas Shaikh</td>
                                     <td>Uncertainty-aware Social Navigation Through Variational Gaussian Process Motion Planning</td>
                                     <td>
@@ -822,7 +786,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">17</td>
+                                    <td class="number-col">15</td>
                                     <td>Vivek Saini</td>
                                     <td>Data-Driven Surrogate Modeling and Bayesian Optimization for High-Dimensional Plasma Kinetic Systems</td>
                                     <td>
@@ -850,7 +814,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">18</td>
+                                    <td class="number-col">16</td>
                                     <td>Nnamdi Chikere</td>
                                     <td>Sensitivity Analysis of Coupled Hopf Oscillator Dynamics for Controlled Flipper-Driven Robotic Locomotion</td>
                                     <td>
@@ -868,7 +832,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">19</td>
+                                    <td class="number-col">17</td>
                                     <td>Yuezhu Xu</td>
                                     <td>ECLipsE-series: Efficient Compositional (Local) Lipschitz Estimates for Deep Neural Networks</td>
                                     <td>
@@ -890,7 +854,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">20</td>
+                                    <td class="number-col">18</td>
                                     <td>Zirui Xu</td>
                                     <td>Scalable and Reliable Coordination in Embodied Intelligent Networks: A Submodular Optimization and Online Learning Approach</td>
                                     <td>
@@ -908,7 +872,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">21</td>
+                                    <td class="number-col">19</td>
                                     <td>Shijun Zhou</td>
                                     <td>Gliding-enabled Bird-scaled Flapping Wing Vehicle</td>
                                     <td>
@@ -926,7 +890,7 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td class="number-col">22</td>
+                                    <td class="number-col">20</td>
                                     <td>Alba Gurpegui Ramón</td>
                                     <td>Minimax Linear Optimal Control of Positive Systems</td>
                                     <td>
