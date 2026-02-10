@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ICON SRC 2026 Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body { background: #0b0b0b; color: #fff; font-family: "Open Sans", Arial, sans-serif; }
+        .page-wrap { padding: 36px 0 64px; }
+
+        .purdue-btn {
+            background-color: #c8a24a;
+            border-color: #c8a24a;
+            color: #000000;
+            font-size: 1.15rem;
+            padding: 10px 26px;
+        }
+        .purdue-btn:hover,
+        .purdue-btn:focus {
+            background-color: #a98530;
+            border-color: #a98530;
+            color: #000000;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(210px, 1fr));
+            gap: 14px;
+            margin-top: 18px;
+        }
+        .gallery-item {
+            border: 0;
+            padding: 0;
+            background: transparent;
+            text-align: left;
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            outline: none;
+        }
+        .gallery-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(180deg, rgba(0,0,0,0) 65%, rgba(0,0,0,0.45) 100%);
+            opacity: 0;
+            transition: opacity 160ms ease;
+            pointer-events: none;
+        }
+        .gallery-item:hover::after { opacity: 1; }
+        .gallery-thumb {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            transform: scale(1);
+            transition: transform 200ms ease, filter 200ms ease;
+            filter: saturate(1.02) contrast(1.02);
+        }
+        .gallery-item:hover .gallery-thumb { transform: scale(1.06); }
+        .gallery-item:focus-visible { box-shadow: 0 0 0 3px rgba(200, 162, 74, 0.8); }
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: none;
+        }
+        .lightbox.is-open { display: block; }
+        .lightbox-backdrop {
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.82);
+        }
+        .lightbox-content {
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            padding: 18px;
+        }
+        .lightbox-stage {
+            position: relative;
+            width: min(1200px, 92vw);
+            height: min(82vh, 760px);
+            display: grid;
+            place-items: center;
+        }
+        .lightbox-img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            border-radius: 10px;
+            background: rgba(255,255,255,0.04);
+            box-shadow: 0 20px 70px rgba(0,0,0,0.6);
+            cursor: pointer;
+        }
+        .lightbox-close {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            border: 0;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            width: 44px;
+            height: 44px;
+            border-radius: 999px;
+            font-size: 22px;
+            line-height: 44px;
+        }
+        .lightbox-nav {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            border: 0;
+            background: rgba(0,0,0,0.55);
+            color: #fff;
+            width: 52px;
+            height: 52px;
+            border-radius: 999px;
+            font-size: 30px;
+            line-height: 52px;
+        }
+        .lightbox-nav.prev { left: 10px; }
+        .lightbox-nav.next { right: 10px; }
+        .lightbox-close:hover,
+        .lightbox-nav:hover { background: rgba(0,0,0,0.75); }
+        .lightbox-counter {
+            position: absolute;
+            left: 14px;
+            bottom: 14px;
+            background: rgba(0,0,0,0.55);
+            padding: 8px 12px;
+            border-radius: 999px;
+            font-size: 0.95rem;
+            letter-spacing: 0.2px;
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .gallery-thumb, .gallery-item::after { transition: none !important; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container page-wrap">
+        <div class="d-flex align-items-center justify-content-between flex-wrap gap-2">
+            <div>
+                <h1 class="mb-0">Gallery</h1>
+                <div class="text-white-50 mt-1" id="galleryCount"></div>
+            </div>
+            <div class="d-flex gap-2">
+                <a href="index.html" class="btn purdue-btn">Back to Home</a>
+            </div>
+        </div>
+
+        <div id="galleryGrid" class="gallery-grid" aria-label="Photo gallery grid"></div>
+        <div id="galleryError" class="alert alert-warning mt-4 d-none" role="alert"></div>
+    </div>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <div class="lightbox-backdrop" data-action="close"></div>
+        <div class="lightbox-content" role="dialog" aria-modal="true" aria-label="Image viewer">
+            <div class="lightbox-stage">
+                <button class="lightbox-close" type="button" aria-label="Close" data-action="close">×</button>
+                <button class="lightbox-nav prev" type="button" aria-label="Previous" data-action="prev">‹</button>
+                <img id="lightboxImg" class="lightbox-img" alt="Gallery photo (click for next)" />
+                <button class="lightbox-nav next" type="button" aria-label="Next" data-action="next">›</button>
+                <div class="lightbox-counter" id="lightboxCounter"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        (function () {
+            const MANIFEST_URL = 'img/src-2026-photos/full-list/manifest.txt';
+            const gridEl = document.getElementById('galleryGrid');
+            const countEl = document.getElementById('galleryCount');
+            const errorEl = document.getElementById('galleryError');
+
+            const lightboxEl = document.getElementById('lightbox');
+            const lightboxImgEl = document.getElementById('lightboxImg');
+            const lightboxCounterEl = document.getElementById('lightboxCounter');
+
+            let images = [];
+            let currentIndex = 0;
+            let lastFocusedEl = null;
+
+            function setError(msg) {
+                errorEl.textContent = msg;
+                errorEl.classList.remove('d-none');
+            }
+
+            function setCount() {
+                countEl.textContent = images.length ? `${images.length} photos` : '';
+            }
+
+            function renderGrid() {
+                const frag = document.createDocumentFragment();
+                images.forEach((src, idx) => {
+                    const btn = document.createElement('button');
+                    btn.type = 'button';
+                    btn.className = 'gallery-item';
+                    btn.setAttribute('aria-label', `Open photo ${idx + 1} of ${images.length}`);
+                    btn.dataset.index = String(idx);
+
+                    const img = document.createElement('img');
+                    img.className = 'gallery-thumb';
+                    img.loading = 'lazy';
+                    img.decoding = 'async';
+                    img.src = src;
+                    img.alt = `Gallery photo ${idx + 1}`;
+
+                    btn.appendChild(img);
+                    frag.appendChild(btn);
+                });
+                gridEl.innerHTML = '';
+                gridEl.appendChild(frag);
+            }
+
+            function openLightbox(index) {
+                if (!images.length) return;
+                lastFocusedEl = document.activeElement;
+                currentIndex = (index + images.length) % images.length;
+                lightboxImgEl.src = images[currentIndex];
+                lightboxCounterEl.textContent = `${currentIndex + 1} / ${images.length}`;
+                lightboxEl.classList.add('is-open');
+                lightboxEl.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeLightbox() {
+                lightboxEl.classList.remove('is-open');
+                lightboxEl.setAttribute('aria-hidden', 'true');
+                document.body.style.overflow = '';
+                lightboxImgEl.removeAttribute('src');
+                if (lastFocusedEl && typeof lastFocusedEl.focus === 'function') {
+                    lastFocusedEl.focus();
+                }
+            }
+
+            function next() { openLightbox(currentIndex + 1); }
+            function prev() { openLightbox(currentIndex - 1); }
+
+            gridEl.addEventListener('click', (e) => {
+                const btn = e.target.closest('.gallery-item');
+                if (!btn) return;
+                const idx = Number(btn.dataset.index);
+                if (Number.isFinite(idx)) openLightbox(idx);
+            });
+
+            lightboxEl.addEventListener('click', (e) => {
+                const actionEl = e.target.closest('[data-action]');
+                if (actionEl) {
+                    const action = actionEl.getAttribute('data-action');
+                    if (action === 'close') return closeLightbox();
+                    if (action === 'next') return next();
+                    if (action === 'prev') return prev();
+                }
+            });
+
+            lightboxImgEl.addEventListener('click', () => next());
+
+            document.addEventListener('keydown', (e) => {
+                if (!lightboxEl.classList.contains('is-open')) return;
+                if (e.key === 'Escape') { e.preventDefault(); closeLightbox(); }
+                if (e.key === 'ArrowRight') { e.preventDefault(); next(); }
+                if (e.key === 'ArrowLeft') { e.preventDefault(); prev(); }
+            });
+
+            fetch(MANIFEST_URL, { cache: 'no-cache' })
+                .then((res) => {
+                    if (!res.ok) throw new Error(`Failed to load manifest: ${res.status}`);
+                    return res.text();
+                })
+                .then((txt) => {
+                    images = txt
+                        .split(/\r?\n/g)
+                        .map((s) => s.trim())
+                        .filter(Boolean);
+                    if (!images.length) {
+                        setError('No images found in the gallery manifest.');
+                        return;
+                    }
+                    setCount();
+                    renderGrid();
+                })
+                .catch((err) => {
+                    setError(`Could not load gallery images. (${err.message})`);
+                });
+        })();
+    </script>
+</body>
+</html>
